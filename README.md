@@ -146,8 +146,7 @@ functions were implemented. Please refer to the component list below:
 |             |                                                                           |
 |             | Detects light intensity                                                   |
 |             |                                                                           |
-|             | - ![Text Description automatically generated with low                     |
-|             |   confidence](./media/image9.png){width="1.8756146106736657in"            |
+|             | - ![](./media/image9.png){width="1.8756146106736657in"            |
 |             |   height="0.26291885389326336in"}                                         |
 |             |                                                                           |
 |             | - Constant 1 & 2 obtained by calibration                                  |
