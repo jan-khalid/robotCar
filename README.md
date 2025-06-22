@@ -54,17 +54,21 @@ ways. Therefore, it is sensible to be familiar with the components given
 for use in this project before getting into the details of how the
 functions were implemented. Please refer to the component list below:
 
-| Component 1 | <img src="https://drive.google.com/uc?id=118TEAeUvNCsF4TVjg4kttbjW6Ix1c4GP" width="110" height="78" alt="Arduino Uno"><br> |
-|-------------|----------------------------------------------------------------------------|
-|             | **Figure 2: Arduino Uno**                                                  |
-|             | Microcontroller (MIC) board:                                               |
-|             | - 14 digital input/output pins                                             |
-|             | - 6 PWM-supported output pins                                              |
-|             | - 6 analog input pins                                                      |
-|             | - USB connection                                                           |
-|             | - Power jack \[2\]                                                         |
+| C | <img src="https://drive.google.com/uc?id=118TEAeUvNCsF4TVjg4kttbjW6Ix1c4GP" width="110" height="78" alt="Arduino Uno"><br> |
+| o | **Figure 2: Arduino Uno**                                                  |
+| m | Microcontroller (MIC) board:                                               |
+| p | - 14 digital input/output pins                                             |
+| o | - 6 PWM-supported output pins                                              |
+| n | - 6 analog input pins                                                      |
+| e | - USB connection                                                           |
+| n | - Power jack \[2\]                                                         |
+| e |                                                                            |
+| n |                                                                            |
+| t |                                                                            |
+|   |                                                                            |
+| 1 |                                                                            |
 +:===========:+:=========================================================================:+
-| Component 1 | ![](./media/image3.png){width="0.7273173665791776in"                      |
+| Component 2 | ![](./media/image3.png){width="0.7273173665791776in"                      |
 |             | height="1.3347200349956256in"}                                            |
 |             |                                                                           |
 |             | Figure 3: Servo motors and wheels                                         |
