@@ -55,8 +55,8 @@ for use in this project before getting into the details of how the
 functions were implemented. Please refer to the component list below:
 
 +-------------+---------------------------------------------------------------------------+
-| Component 1 | ![](./media/image2.png){width="1.1552788713910762in"                      |
-|             | height="0.817755905511811in"}                                             |
+| Component 1 | <img src="https://drive.google.com/uc?id=118TEAeUvNCsF4TVjg4kttbjW6Ix1c4GP
+                  " width="110" height="78" alt="Description">                            |
 |             |                                                                           |
 |             | Figure 2: Arduino Uno                                                     |
 |             |                                                                           |
@@ -64,7 +64,7 @@ functions were implemented. Please refer to the component list below:
 |             |                                                                           |
 |             | - 14 digital input/output pins                                            |
 |             |                                                                           |
-|             |   - 6 PWM-supported output pins                                           |
+|             | - 6 PWM-supported output pins                                             |
 |             |                                                                           |
 |             | - 6 analog input pins                                                     |
 |             |                                                                           |
