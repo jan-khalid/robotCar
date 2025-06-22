@@ -43,7 +43,7 @@ braking at a point of interest, multi-point location traversal, charging
 wirelessly, light tracking, route optimization, and safety signalling
 for traffic. These are expounded upon in further sections of the paper.
 
-![Figure 1: 5x5 Grid](https://drive.google.com/file/d/16VsBIpmmS2ZkoTbm-FzRvof4Wr3_QHSV/view?usp=drive_link){width="1.924453193350831in"
+![Figure 1: 5x5 Grid]([https://drive.google.com/file/d/16VsBIpmmS2ZkoTbm-FzRvof4Wr3_QHSV/view?usp=drive_link](https://drive.google.com/u/0/drive-viewer/AKGpihanL0nPTyRLoli3dKAkGHExXHEbazx2UJpGlQm8snpUP-6adEYpWgoAkb1_85fetauPBE75WCogwOyg-7fnJOfPKttqLrkyJeU=s2560)){width="1.924453193350831in"
 height="1.0873370516185477in"}
 
 ## II. Methodology
