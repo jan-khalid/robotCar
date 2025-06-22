@@ -43,7 +43,7 @@ braking at a point of interest, multi-point location traversal, charging
 wirelessly, light tracking, route optimization, and safety signalling
 for traffic. These are expounded upon in further sections of the paper.
 
-![Figure 1: 5x5 Grid](https://drive.google.com/uc?id=1-I14TdnpkGwwObWs1ZNGt2Ufb2NMIBSH){width="1.924453193350831in"
+![Figure 1: 5x5 Grid](https://drive.google.com/uc?id=16VsBIpmmS2ZkoTbm-FzRvof4Wr3_QHSV){width="1.924453193350831in"
 height="1.0873370516185477in"}
 
 ## II. Methodology
@@ -56,8 +56,8 @@ for use in this project before getting into the details of how the
 functions were implemented. Please refer to the component list below:
 
 +-------------+---------------------------------------------------------------------------+
-| > Component | ![](./media/image2.png){width="1.1552788713910762in"                      |
-| > 1         | height="0.817755905511811in"}                                             |
+| Component 1 | ![](./media/image2.png){width="1.1552788713910762in"                      |
+|             | height="0.817755905511811in"}                                             |
 |             |                                                                           |
 |             | Figure 2: Arduino Uno                                                     |
 |             |                                                                           |
@@ -73,8 +73,8 @@ functions were implemented. Please refer to the component list below:
 |             |                                                                           |
 |             | - Power jack \[2\]                                                        |
 +:===========:+:=========================================================================:+
-| > Component | ![](./media/image3.png){width="0.7273173665791776in"                      |
-| > 2         | height="1.3347200349956256in"}                                            |
+| Component 1 | ![](./media/image3.png){width="0.7273173665791776in"                      |
+|             | height="1.3347200349956256in"}                                            |
 |             |                                                                           |
 |             | Figure 3: Servo motors and wheels                                         |
 |             |                                                                           |
@@ -82,8 +82,8 @@ functions were implemented. Please refer to the component list below:
 |             |                                                                           |
 |             | - Difference in wheel speed leads to turning                              |
 +-------------+---------------------------------------------------------------------------+
-| > Component | ![](./media/image4.png){width="1.59667760279965in"                        |
-| > 3         | height="0.7297298775153106in"}                                            |
+| Component 3 | ![](./media/image4.png){width="1.59667760279965in"                        |
+|             | height="0.7297298775153106in"}                                            |
 |             |                                                                           |
 |             | Figure 4: Breadboard (top and back view) \[3\]                            |
 |             |                                                                           |
