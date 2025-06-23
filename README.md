@@ -279,11 +279,11 @@ intensity detected between the left and right sensor leads to steering
 until the difference is nought -- allowing for the vehicle to track the
 light source.
 
-<figure>
-<img src="https://drive.google.com/uc?id=1nMhRHJwGWH9NcqZxMj7I53CuT9cVQHnr" style="width:1.72146in;height:1.19662in"
-alt="" />
-<figcaption><p>Figure 20: Light tracking</p></figcaption>
-</figure>
+<p align="center">
+  <img src="https://drive.google.com/uc?id=1nMhRHJwGWH9NcqZxMj7I53CuT9cVQHnr" width="533" height="346" alt="Light tracking">
+  <br>
+  <em>Figure 20: Light tracking</em>
+</p>
 
 [Function 7: Route optimization]{.underline} is an advancement of
 Functions 1 & 3 in that it allows for diagonal movement which saves
