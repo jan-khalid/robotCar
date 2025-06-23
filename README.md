@@ -59,42 +59,75 @@ functions were implemented. Please refer to the component list below:
 <head>
     <title>Component List</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
         table {
             border-collapse: collapse;
             width: 100%;
             margin: 20px 0;
+            box-shadow: 0 2px 3px rgba(0,0,0,0.1);
         }
         th, td {
             border: 1px solid #ddd;
-            padding: 8px;
+            padding: 12px;
             vertical-align: top;
         }
         th {
             background-color: #f2f2f2;
             text-align: left;
+            font-weight: bold;
+        }
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: left;
         }
         figure {
-            margin: 10px 0;
+            margin: 15px 0;
             text-align: center;
         }
         figcaption {
             font-style: italic;
-            margin-top: 5px;
+            margin-top: 8px;
+            font-size: 0.9em;
         }
         ul {
-            margin-top: 5px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            padding-left: 20px;
+        }
+        li {
             margin-bottom: 5px;
+        }
+        .inner-table {
+            width: 100%;
+            margin: 10px 0;
+            background-color: #f9f9f9;
+        }
+        .inner-table th, .inner-table td {
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+        img {
+            max-width: 300px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
 
 <table>
-  <caption><strong>Table 2: Component list</strong></caption>
+  <caption>Table 2: Component list</caption>
   <thead>
     <tr>
-      <th>Component</th>
-      <th>Description</th>
+      <th width="15%">Component</th>
+      <th width="85%">Description</th>
     </tr>
   </thead>
   <tbody>
@@ -103,7 +136,7 @@ functions were implemented. Please refer to the component list below:
       <td><strong>Component 1</strong></td>
       <td>
         <figure>
-          <img src="https://drive.google.com/uc?id=118TEAeUvNCsF4TVjg4kttbjW6Ix1c4GP" alt="Arduino Uno" style="max-width: 300px;">
+          <img src="https://drive.google.com/uc?id=118TEAeUvNCsF4TVjg4kttbjW6Ix1c4GP" alt="Arduino Uno">
           <figcaption>Figure 2: Arduino Uno</figcaption>
         </figure>
         <p>Microcontroller (MIC) board:</p>
@@ -122,7 +155,7 @@ functions were implemented. Please refer to the component list below:
       <td><strong>Component 2</strong></td>
       <td>
         <figure>
-          <img src="https://drive.google.com/uc?id=1FYyZ2DlzrN_P1PdUb55zT65jjyhkj4kh" alt="Servo motors and wheels" style="max-width: 300px;">
+          <img src="https://drive.google.com/uc?id=1FYyZ2DlzrN_P1PdUb55zT65jjyhkj4kh" alt="Servo motors and wheels">
           <figcaption>Figure 3: Servo motors and wheels</figcaption>
         </figure>
         <ul>
@@ -132,8 +165,165 @@ functions were implemented. Please refer to the component list below:
       </td>
     </tr>
     
-    <!-- Rest of the table content would continue here -->
-    <!-- (I've included the first two components as examples) -->
+    <!-- Component 3 -->
+    <tr>
+      <td><strong>Component 3</strong></td>
+      <td>
+        <figure>
+          <img src="https://drive.google.com/uc?id=1dCglXeIbOtbaShyn0qj69nz8WdPN-aq4" alt="Breadboard">
+          <figcaption>Figure 4: Breadboard (top and back view) [3]</figcaption>
+        </figure>
+        <ul>
+          <li>Allows for impermanent, solderless, reusable circuit connections</li>
+          <li>Upper and lower 2 rows are horizontally connected to power supply</li>
+          <li>Columns are vertically connected with a horizontal middle gap for component connection</li>
+        </ul>
+      </td>
+    </tr>
+    
+    <!-- Component 4 -->
+    <tr>
+      <td><strong>Component 4</strong></td>
+      <td>
+        <figure>
+          <img src="https://drive.google.com/uc?id=1Z_yldZ-BVVMl_QOZEkbTgGLMChFdRzB7" alt="QTI Sensors">
+          <figcaption>Figure 5: QTI (Charge-Transfer-Infrared) Sensors</figcaption>
+        </figure>
+        <ul>
+          <li>Close-proximity-infrared emitter/receiver</li>
+          <li>Used to detect the black grid lines</li>
+          <li>Darker the color, higher the raw value</li>
+          <li>White color detection raw value ~100</li>
+          <li>Black color detection raw value ~900</li>
+          <li>Critical value for white detection set to &lt;100</li>
+          <li>Critical value for black detection set to &gt;700</li>
+        </ul>
+      </td>
+    </tr>
+    
+    <!-- Component 5 -->
+    <tr>
+      <td><strong>Component 5</strong></td>
+      <td>
+        <figure>
+          <img src="https://drive.google.com/uc?id=1dTLgiFMncumrsplaNH9nInJmex8phKXU" alt="Ultrasonic Sensor">
+          <figcaption>Figure 6: Ultrasonic Sensor</figcaption>
+        </figure>
+        <p><strong>Principle:</strong></p>
+        <ul>
+          <li>Ultrasonic waves emitted by the sensor are rebounded after hitting an object in front of it</li>
+          <li>The time it takes for the wave to be received by the sensor is the travelling time</li>
+          <li>Multiplying the speed of sound with half the travelling time gives the object distance</li>
+        </ul>
+        <p><strong>Application:</strong></p>
+        <p>A command can be set to allow the machine to be stopped in front of the object at a specific distance, in this case 4 cm before the object is chosen.</p>
+        <figure>
+          <img src="https://drive.google.com/uc?id=14dTANm-hBEZKRvG2LJvE4W_1B6SBWvuQ" alt="Ultrasonic sensor working principle">
+          <figcaption>Figure 7: Ultrasonic sensor working principle [4]</figcaption>
+        </figure>
+      </td>
+    </tr>
+    
+    <!-- Component 6 -->
+    <tr>
+      <td><strong>Component 6</strong></td>
+      <td>
+        <figure>
+          <img src="https://drive.google.com/uc?id=1NF92FzxPr3rEQtqQLV1sXrRPJAeINmlu" alt="Photoresistor">
+          <figcaption>Figure 8: Photoresistor</figcaption>
+        </figure>
+        <p>Detects light intensity</p>
+        <figure>
+          <img src="https://drive.google.com/uc?id=15fsUP3MU1duzVdhRyLyZxI9ozETNZ617" alt="Photoresistor diagram">
+        </figure>
+        <ul>
+          <li>Constant 1 & 2 obtained by calibration</li>
+          <li>Calibration should be carried out in stable environment</li>
+        </ul>
+      </td>
+    </tr>
+    
+    <!-- Component 7 -->
+    <tr>
+      <td><strong>Component 7</strong></td>
+      <td>
+        <figure>
+          <img src="https://drive.google.com/uc?id=1jW8HM2Sy-0RnYXwAkTAOOf9JwDM4IB5T" alt="Color Sensor">
+          <figcaption>Figure 9: Color Sensor</figcaption>
+        </figure>
+        <ul>
+          <li>All colors come from 3 basic color combinations:
+            <ul>
+              <li>red, blue, and green.</li>
+            </ul>
+          </li>
+          <li>Photodiode sensor detects color</li>
+          <li>The color sensor has an 8×8 array of photodiodes with 3 different color filters
+            <ul>
+              <li>Each of the red, blue, green, and clear color filters have 16 photodiode sensors each.</li>
+            </ul>
+          </li>
+          <li>Every set of photodiode sensors are connected in parallel; we can read data from S2 and S3 pins, the logic is shown in Table 1.</li>
+        </ul>
+        <table class="inner-table">
+          <caption>Table 1: Color recognition logic</caption>
+          <thead>
+            <tr>
+              <th>S2</th>
+              <th>S3</th>
+              <th>Color</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>LOW</td>
+              <td>LOW</td>
+              <td>Red</td>
+            </tr>
+            <tr>
+              <td>LOW</td>
+              <td>HIGH</td>
+              <td>Blue</td>
+            </tr>
+            <tr>
+              <td>HIGH</td>
+              <td>LOW</td>
+              <td>Clear</td>
+            </tr>
+            <tr>
+              <td>HIGH</td>
+              <td>HIGH</td>
+              <td>Green</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    
+    <!-- Component 8 -->
+    <tr>
+      <td><strong>Component 8</strong></td>
+      <td>
+        <figure>
+          <img src="https://drive.google.com/uc?id=1AOd8ESvP3s61vNr7g-RnZea-8evAmHN5" alt="Inductive resonant coils">
+          <figcaption>Figure 10: Transmitter/receiver inductive resonant coils</figcaption>
+        </figure>
+        <p><strong>Function:</strong></p>
+        <ul>
+          <li>To induce a current via a time-varying magnetic field</li>
+        </ul>
+        <p><strong>Operating principle:</strong></p>
+        <ul>
+          <li>Main voltage changes into high frequency alternating current (AC)
+            <ul>
+              <li>Transfers to transmitter coil, initiating an alternative field</li>
+              <li>Field reaches out to receiver coil, generating a current</li>
+            </ul>
+          </li>
+          <li>Known as magnetic (or full) coupling</li>
+        </ul>
+      </td>
+    </tr>
   </tbody>
 </table>
 
