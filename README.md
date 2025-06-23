@@ -67,9 +67,8 @@ functions were implemented. Please refer to the component list below:
 
 The vehicle is assembled as follows:
 
-### ![](./media/image12.png){width="2.038961067366579in" height="1.4725524934383203in"}
+### ![Figure 11: Assembled vehicle](https://drive.google.com/uc?id=1xs8ykPkw4vE1f4nf8OvFp5Honr8VoC_x){width="2.038961067366579in" height="1.4725524934383203in"}
 
-Figure 11: Assembled vehicle
 
 ### B. Arduino programming
 
