@@ -123,11 +123,7 @@ of intersections until 3. Then turnCarOnsiteL() is called to make a
 right-angled left turn on (3, 0) and counts the number of intersections.
 Once 3 intersections are counted, stop() is called to brake the car.
 
-![Chart Description automatically
-generated](./media/image15.png){width="1.9222222222222223in"
-height="1.9736111111111112in"}
-
-Figure 13: A(0, 0) to B(3, 2) path
+![Figure 13: A(0, 0) to B(3, 2) path](https://drive.google.com/uc?id=1cIlL0nmPykt9AdBE6WPjhxRsGCEVJXQ8)
 
 [Function 2: Going to a particular coordinate with
 obstacles]{.underline} is an expansion of Function 1. The extra
@@ -150,8 +146,8 @@ its remaining journey. The logic for the rest of the trip is similar to
 that of the aforementioned and that of Function 1.
 
 <figure>
-<img src="./media/image16.png" style="width:1.52703in;height:1.57065in"
-alt="Chart Description automatically generated" />
+<img src="https://drive.google.com/uc?id=1YKLMIoTtdlC180a4CBUeaXogFfJytDwN" style="width:1.52703in;height:1.57065in"
+alt="" />
 <figcaption><p>Figure 14: A(0, 0) to B(4, 5) path</p></figcaption>
 </figure>
 
@@ -176,7 +172,7 @@ stops at (4, 3). The value of counter == 19 is then converted to its
 corresponding coordinate (4, 3) to be displayed on the car's OLED.
 
 <figure>
-<img src="./media/image17.png" style="width:1.52014in;height:1.57292in"
+<img src="https://drive.google.com/uc?id=16-qapQKrXp7apQwC-uhDD6zAYU-3aJGS" style="width:1.52014in;height:1.57292in"
 alt="Chart Description automatically generated" />
 <figcaption><p>Figure 15: Red spot at (4, 3)</p></figcaption>
 </figure>
@@ -219,8 +215,8 @@ Once the counter of sets of coords passed reaches the length of the
 array of coordinates, i.e., 3, the car stops.
 
 <figure>
-<img src="./media/image18.png" style="width:1.95764in;height:1.84861in"
-alt="A picture containing building Description automatically generated" />
+<img src="https://drive.google.com/uc?id=10WSB2Tkh0uMhLk8pda-pRHAY1G3_HEKI" style="width:1.95764in;height:1.84861in"
+alt="" />
 <figcaption><p>Figure 16: A(4, 1)&gt;B(2, 5)&gt;C(1, 3)
 path</p></figcaption>
 </figure>
@@ -233,9 +229,7 @@ receive power. The goal of this function is for a car moving in a
 straight line to stop right in front of a charging station and for their
 coils to touch each other without knocking over the charging station.
 
-![](./media/image19.png){width="0.9829276027996501in"
-height="1.066761811023622in"}![](./media/image20.png){width="1.0in"
-height="1.056418416447944in"}
+![](https://drive.google.com/uc?id=16A_YyLbM927ICsms7_yF05D2loEJsDFT)![](https://drive.google.com/uc?id=16wZ1H6y1hT7rVKauJhier4mZsKpn_GoU)
 
 Figure 17: Receiver coil (car) and transmitter coil (charging station)
 
@@ -254,8 +248,7 @@ V= vin" is then continuously printed on the OLED display as shown in
 Figure 18 below.
 
 ![Figure 18: Voltage displayed on
-OLED](./media/image21.png){width="1.5408366141732284in"
-height="2.1739905949256344in"}
+OLED](https://drive.google.com/uc?id=1DBQjFN1bjgvArRRwdoKlgfWlUmyniNyJ)
 
 In order to get distance_in_cm, a LOW-HIGH-LOW pulse is firstly sent
 using trigPin. Then using echoPin, the duration of the pulse is
@@ -268,8 +261,8 @@ photoresistors. Two photoresistors are installed at the front of the
 vehicle: one to the left and one to the right as shown in Figure 19.
 
 <figure>
-<img src="./media/image22.png" style="width:1.88312in;height:1.21798in"
-alt="A picture containing electronics, camera Description automatically generated" />
+<img src="https://drive.google.com/uc?id=12eVXvhA-AHGWhs0XRHkqfw-r8SIoimR3" style="width:1.88312in;height:1.21798in"
+alt="" />
 <figcaption><p>Figure 19: Photoresistor placement</p></figcaption>
 </figure>
 
@@ -280,8 +273,8 @@ until the difference is nought -- allowing for the vehicle to track the
 light source.
 
 <figure>
-<img src="./media/image23.png" style="width:1.72146in;height:1.19662in"
-alt="A picture containing swimming Description automatically generated" />
+<img src="https://drive.google.com/uc?id=1nMhRHJwGWH9NcqZxMj7I53CuT9cVQHnr" style="width:1.72146in;height:1.19662in"
+alt="" />
 <figcaption><p>Figure 20: Light tracking</p></figcaption>
 </figure>
 
@@ -317,8 +310,8 @@ coordinates, the new point chosen will be the point that both x,y
 coordinates increments by 1.
 
 <figure>
-<img src="./media/image24.png" style="width:1.70767in;height:1.85454in"
-alt="Diagram, shape Description automatically generated" />
+<img src="https://drive.google.com/uc?id=1oh-x9J0Xd4Kk0O0VoJNwnGKlh8AI8K6q" style="width:1.70767in;height:1.85454in"
+alt="" />
 <figcaption><p>Figure 21: Diagonal pathing</p></figcaption>
 </figure>
 
@@ -336,8 +329,8 @@ The mechanism is triangulation. The distance is calculated by the angle
 of a reflected IR off a surface.
 
 <figure>
-<img src="./media/image25.png" style="width:1.2135in;height:0.8046in"
-alt="A picture containing cable, connector Description automatically generated" />
+<img src="https://drive.google.com/uc?id=1axNJ62H6PXatO20segMoIbVsJM5k6DAk" style="width:1.2135in;height:0.8046in"
+alt="" />
 <figcaption><p>Figure 22: IR distance sensor</p></figcaption>
 </figure>
 
@@ -355,8 +348,8 @@ the MIC as shown in Figure 23. The IR sensors detect road condition and
 send the signals to the vehicle and control the car movement.
 
 <figure>
-<img src="./media/image26.png" style="width:2.19771in;height:1.2987in"
-alt="A picture containing text, electronics Description automatically generated" />
+<img src="https://drive.google.com/uc?id=1LEBDIcC9I4IQpNHVfBscIGi5sGGpuX7d" style="width:2.19771in;height:1.2987in"
+alt="" />
 <figcaption><p>Figure 23: Schematic Diagram for Funtion
 8</p></figcaption>
 </figure>
@@ -373,12 +366,7 @@ installed in one traffic light. 00 and 03 are also the situations that
 are not allowing the car to enter the road or make a turn. 01 and 02 are
 also the situations that are allowing the car to pass through.
 
-![Graphical user interface Description automatically
-generated](./media/image27.png){width="1.1363637357830272in"
-height="1.0054910323709536in"} ![Graphical user interface Description
-automatically
-generated](./media/image28.png){width="1.1260498687664042in"
-height="1.0022845581802275in"}
+![](https://drive.google.com/uc?id=1aW6_9zIVSRKh4fPjHjbYH11O8teZC9ye) ![](https://drive.google.com/uc?id=1eMj3kc0Qn-L3YyR11ZdHq_dhicPRJtIz)
 
 Figure 24: Traffic conditions
 
@@ -426,8 +414,8 @@ QTI sensor was therefore installed at a lower position, as shown in
 Figure 25, which improved its sensitivity.
 
 <figure>
-<img src="./media/image29.png" style="width:2.26816in;height:1.49102in"
-alt="A picture containing text, electronics, camera, automaton Description automatically generated" />
+<img src="https://drive.google.com/uc?id=1F-_M9iCeVY6ljVtr9MR5od5a5qbKeM58" style="width:2.26816in;height:1.49102in"
+alt="" />
 <figcaption><p>Figure 25: Updated QTI sensor position</p></figcaption>
 </figure>
 
@@ -449,8 +437,8 @@ speed would be balanced by using the actual speed to plus or minus the
 input speed.
 
 <figure>
-<img src="./media/image30.png" style="width:1.72519in;height:4.0666in"
-alt="Text, letter Description automatically generated" />
+<img src="https://drive.google.com/uc?id=1_rxsUqJH6nXka6eaLRRCICCoU4nsd5ou" style="width:1.72519in;height:4.0666in"
+alt="" />
 <figcaption><p>CODE 2: SERVO CORRECTION</p></figcaption>
 </figure>
 
@@ -464,8 +452,8 @@ for 'Constant 1' and 'Constant 2' of the equation below were obtained --
 leading to better light tracking.
 
 <figure>
-<img src="./media/image9.png" style="width:2.2621in;height:0.3171in"
-alt="Text Description automatically generated with low confidence" />
+<img src="https://drive.google.com/uc?id=15fsUP3MU1duzVdhRyLyZxI9ozETNZ617" style="width:2.2621in;height:0.3171in"
+alt="" />
 <figcaption><p>Equation 1: Photodiode Calibration
 Equation</p></figcaption>
 </figure>
@@ -548,20 +536,20 @@ project.
 [Function 1: Going to a particular coordinate without
 obstacles]{.underline}
 
-+--------------------------------------------------------------+--------------------------------------------------------------+
-| **Situation 1:**                                             | **Situation 2:**                                             |
-+:=============================================================+:=============================================================+
-| When the left and right QTI sensors detect a value smaller   | When all of the four sensors detect a number larger than     |
-| than 100 and the middle two sensors detect a value larger    | 700, it indicates the car is at the intersections of the two |
-| than700, the car would move straight on the grid.            | lines. An instruction can be given to control the car to     |
-|                                                              | turn left or turn right.                                     |
-+--------------------------------------------------------------+--------------------------------------------------------------+
-| ![Chart, box and whisker chart Description automatically     | ![Text Description automatically                             |
-| generated](./media/image31.png){width="0.9296620734908136in" | generated](./media/image32.png){width="1.3458442694663166in" |
-| height="0.9236111111111112in"}                               | height="0.8611111111111112in"}                               |
-|                                                              |                                                              |
-| : Situation 1                                                | : Situation 2                                                |
-+--------------------------------------------------------------+--------------------------------------------------------------+
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+
+| **Situation 1:**                                                                 | **Situation 2:**                                                                 |
++:=================================================================================+:=================================================================================+
+| When the left and right QTI sensors detect a value smaller                       | When all of the four sensors detect a number larger than                         |
+| than 100 and the middle two sensors detect a value larger                        | 700, it indicates the car is at the intersections of the two                     |
+| than700, the car would move straight on the grid.                                | lines. An instruction can be given to control the car to                         |
+|                                                                                  | turn left or turn right.                                                         |
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+
+| ![Situation 1](https://drive.google.com/uc?id=1bK-X87u7bcSnTaC74WTx9nVi6_2OVmq2) | ![Situation 2](https://drive.google.com/uc?id=1XFXTVUuw8oCGRtcjvlW3Jnc0OAEEIQXr) |
+|                                                                                  |                                                                                  |
+|                                                                                  |                                                                                  |
+|                                                                                  |                                                                                  |
+|                                                                                  |                                                                                  |
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+
 
 The general idea of the function is to count the number of intersections
 came across. Theoretically, the value we set is 700. When QTI detects
@@ -573,8 +561,8 @@ reading of the QTI sensors which worked once we adjusted the sensitivity
 of the sensor using a screwdriver.
 
 <figure>
-<img src="./media/image33.png" style="width:2.19989in;height:2.31553in"
-alt="Graphical user interface, application Description automatically generated" />
+<img src="https://drive.google.com/uc?id=1h-dnO2nWdPAhW_oKSP1UoakEzR4Dt0UH" style="width:2.19989in;height:2.31553in"
+alt="" />
 <figcaption><p>APPX 3: FUNCTION 1 MAIN CODE</p></figcaption>
 </figure>
 
@@ -586,48 +574,48 @@ intersections and stop().
 [Function 2: Going to a particular coordinate with
 obstacles]{.underline}
 
-+----------------------------------------------------------------------------------------------------+
-| Programme Flow                                                                                     |
-+:=============================================================+:====================================+
-| The logic is very similar to Task 1.1. However, we also consider obstacles and assume an obstacle  |
-| no more than 15 cm wide.                                                                           |
-|                                                                                                    |
-| We initialize the program for the QTI pins, motor pins, and ultrasonic pins. We initialize the     |
-| variables for counting black lines. And we initialize the constants for the destination            |
-| coordinates 'x' and 'y'.                                                                           |
-|                                                                                                    |
-| The car moves along the positive direction of the x-axis until 'counter of x' is equal to 'x'.     |
-| Then the car turns left. Then the car goes forward in the positive y direction until 'counter of   |
-| y' equals 'y'.                                                                                     |
-+--------------------------------------------------------------+-------------------------------------+
-| How the car alters its route if obstacles within specified   | 'move around left' subroutine on    |
-| dimensions are detected by the ultrasonic sensor.            | the nearest gridline                |
-|                                                              | (turnCarOnsiteL \> forwardCar \>    |
-| If wider obstacles are used, the forwardCar duration can be  | turnCarOnsiteR \> forwardCar \>     |
-| altered, and the increment of 'x' or 'y' can be greater than | turnCarOnsiteR \> forwardCar\>      |
-| one.                                                         | turnCarOnsiteL). The 'counter of x' |
-|                                                              | is incremented by 1, and the car    |
-|                                                              | continues forward in the x-axis     |
-|                                                              | until 'counter of x' equals 'x'.    |
-|                                                              |                                     |
-|                                                              | However, if the car is moving along |
-|                                                              | the y-axis, the car would instead   |
-|                                                              | execute 'move around right'         |
-|                                                              | subroutine. This is to ensure the   |
-|                                                              | car stays within the grid           |
-+--------------------------------------------------------------+                                     |
-| ![A picture containing diagram Description automatically     |                                     |
-| generated](./media/image35.png){width="1.1337576552930884in" |                                     |
-| height="0.8343974190726159in"}                               |                                     |
-|                                                              |                                     |
-| Appx 4: Breadboard connection for Function 2                 |                                     |
-+--------------------------------------------------------------+-------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Programme Flow                                                                                                                                          |
++:=============================================================+:=========================================================================================+
+| The logic is very similar to Task 1.1. However, we also consider obstacles and assume an obstacle                                                       |
+| no more than 15 cm wide.                                                                                                                                |
+|                                                                                                                                                         |
+| We initialize the program for the QTI pins, motor pins, and ultrasonic pins. We initialize the                                                          |
+| variables for counting black lines. And we initialize the constants for the destination                                                                 |
+| coordinates 'x' and 'y'.                                                                                                                                |
+|                                                                                                                                                         |
+| The car moves along the positive direction of the x-axis until 'counter of x' is equal to 'x'.                                                          |
+| Then the car turns left. Then the car goes forward in the positive y direction until 'counter of                                                        |
+| y' equals 'y'.                                                                                                                                          |
++-------------------------------------------------------------------------------------------------------------------+-------------------------------------+
+| How the car alters its route if obstacles within specified                                                        | 'move around left' subroutine on    |
+| dimensions are detected by the ultrasonic sensor.                                                                 | the nearest gridline                |
+|                                                                                                                   | (turnCarOnsiteL \> forwardCar \>    |
+| If wider obstacles are used, the forwardCar duration can be                                                       | turnCarOnsiteR \> forwardCar \>     |
+| altered, and the increment of 'x' or 'y' can be greater than                                                      | turnCarOnsiteR \> forwardCar\>      |
+| one.                                                                                                              | turnCarOnsiteL). The 'counter of x' |
+|                                                                                                                   | is incremented by 1, and the car    |
+|                                                                                                                   | continues forward in the x-axis     |
+|                                                                                                                   | until 'counter of x' equals 'x'.    |
+|                                                                                                                   |                                     |
+|                                                                                                                   | However, if the car is moving along |
+|                                                                                                                   | the y-axis, the car would instead   |
+|                                                                                                                   | execute 'move around right'         |
+|                                                                                                                   | subroutine. This is to ensure the   |
+|                                                                                                                   | car stays within the grid           |
++-------------------------------------------------------------------------------------------------------------------+                                     |
+| ![Appx 4: Breadboard connection for Function 2](https://drive.google.com/uc?id=1s0saxPuTelqDpoydWcpWgfgfpdjvtHRw) |                                     |
+|                                                                                                                   |                                     |
+|                                                                                                                   |                                     |
+|                                                                                                                   |                                     |
+|                                                                                                                   |                                     |
++-------------------------------------------------------------------------------------------------------------------+-------------------------------------+
 
 [Function 3: Braking at a point of interest]{.underline}
 
 <figure>
-<img src="./media/image36.png" style="width:1.18889in;height:1.33056in"
-alt="A close-up of a circuit board Description automatically generated with medium confidence" />
+<img src="https://drive.google.com/uc?id=1BvhxHVeFPb_Ojr-5uuJ5NDiDwjtN_svF" style="width:1.18889in;height:1.33056in"
+alt="" />
 <figcaption><p>Appx 5: Color sensor-MIC interface</p></figcaption>
 </figure>
 
@@ -644,8 +632,8 @@ If no red spot is detected, the car stops at (5, 5) i.e. when counter ==
 shown as below: 
 
 <figure>
-<img src="./media/image37.png" style="width:2.60504in;height:1.26115in"
-alt="A close-up of a computer chip Description automatically generated with low confidence" />
+<img src="https://drive.google.com/uc?id=1uwq1s3cdtwQnMsg25BbubFQk-7Lb891Y" style="width:2.60504in;height:1.26115in"
+alt="" />
 <figcaption><p>Appx 6: Interface of OLED with Arduino</p></figcaption>
 </figure>
 
@@ -692,11 +680,11 @@ distance_in_cm. Then we set up two conditionals, one for distance_in_cm
 less than 20, the other is for otherwise.
 
 +-----------------------------------------------------------------------+
-| ![Text Description automatically generated with medium                |
-| confidence](./media/image38.png){width="2.3581758530183725in"         |
+| ![Appx 8: Conditional 1]                                              |
+| (https://drive.google.com/uc?id=1fOV58OdbssxVX9HHle1cPfC8GAiBGpBq){width="2.3581758530183725in"                    |
 | height="2.4807688101487315in"}                                        |
 |                                                                       |
-| Appx 8: Conditional 1                                                 |
+|                                                                       |
 |                                                                       |
 | In the first conditional, the car should stop once distance_in_cm is  |
 | less than 20. This is to ensure the car decelerates and stops so that |
@@ -705,19 +693,19 @@ less than 20, the other is for otherwise.
 |                                                                       |
 | Furthermore, 'vin' continues to be displayed.                         |
 +=======================================================================+
-| ![Text, letter Description automatically                              |
-| generated](./media/image39.png){width="2.604861111111111in"           |
+| ![Appx 9: Conditional 2]                                              |
+| (https://drive.google.com/uc?id=1w4YUp7Nhc4yZHk_FdSeWeMkttGbalh6K){width="2.604861111111111in"                     |
 | height="1.5083333333333333in"}\                                       |
-| Appx 9: Conditional 2                                                 |
+|                                                                       |
 |                                                                       |
 | If the distance_in_cm is not less than 20, the car should continue    |
 | going forward.                                                        |
 |                                                                       |
 | Furthermore, 'vin' continues to be displayed.                         |
 +-----------------------------------------------------------------------+
-| ![Text Description automatically                                      |
-| generated](./media/image40.png){width="2.9166666666666665in"          |
+| ![Appx 10: Car movement subroutines]                                  |
+| (https://drive.google.com/uc?id=1HHJKGWaBPtKx9q65sKplrN5O7oEuydIN){width="2.9166666666666665in"                    |
 | height="5.933637357830271in"}                                         |
 |                                                                       |
-| Appx 10: Car movement subroutines                                     |
+|                                                                       |
 +-----------------------------------------------------------------------+
