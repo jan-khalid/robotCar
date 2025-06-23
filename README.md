@@ -233,7 +233,10 @@ receive power. The goal of this function is for a car moving in a
 straight line to stop right in front of a charging station and for their
 coils to touch each other without knocking over the charging station.
 
-![](https://drive.google.com/uc?id=16A_YyLbM927ICsms7_yF05D2loEJsDFT =350x350)![](https://drive.google.com/uc?id=16wZ1H6y1hT7rVKauJhier4mZsKpn_GoU =350x350)
+<p align="center">
+  <img src="https://drive.google.com/uc?id=16A_YyLbM927ICsms7_yF05D2loEJsDFT" width="350" style="display: inline-block; margin: 0 10px;">
+  <img src="https://drive.google.com/uc?id=16wZ1H6y1hT7rVKauJhier4mZsKpn_GoU" width="350" style="display: inline-block; margin: 0 10px;">
+</p>
 
 Figure 17: Receiver coil (car) and transmitter coil (charging station)
 
