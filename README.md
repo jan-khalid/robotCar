@@ -123,7 +123,11 @@ of intersections until 3. Then turnCarOnsiteL() is called to make a
 right-angled left turn on (3, 0) and counts the number of intersections.
 Once 3 intersections are counted, stop() is called to brake the car.
 
-![Figure 13: A(0, 0) to B(3, 2) path](https://drive.google.com/uc?id=1cIlL0nmPykt9AdBE6WPjhxRsGCEVJXQ8 =350x350)
+<p align="center">
+  <img src="https://drive.google.com/uc?id=1cIlL0nmPykt9AdBE6WPjhxRsGCEVJXQ8" width="350" alt="Figure 13: A(0, 0) to B(3, 2) path">
+  <br>
+  <em>Figure 13: A(0, 0) to B(3, 2) path</em>
+</p>
 
 [Function 2: Going to a particular coordinate with
 obstacles]{.underline} is an expansion of Function 1. The extra
