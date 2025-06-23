@@ -67,7 +67,7 @@ functions were implemented. Please refer to the component list below:
 
 The vehicle is assembled as follows:
 
-### ![Figure 11: Assembled vehicle](https://drive.google.com/uc?id=1xs8ykPkw4vE1f4nf8OvFp5Honr8VoC_x){width="2.038961067366579in" height="1.4725524934383203in"}
+### ![Figure 11: Assembled vehicle](https://drive.google.com/uc?id=1xs8ykPkw4vE1f4nf8OvFp5Honr8VoC_x)
 
 
 ### B. Arduino programming
@@ -83,15 +83,8 @@ Development Environment) software. The IDE software uses a C-like
 language, and created programs are flashed to the MIC attached to the
 vehicle via USB.
 
-![](./media/image13.png){width="2.045138888888889in"
+![](https://drive.google.com/uc?id=1BioXmV5anK26FspSsU_1gXlOY780uIsM){width="2.045138888888889in"
 height="2.4604166666666667in"}
-
-RUNS\
-CONTINO-USLY
-
-PINS TO INITIALIZE
-
-CODE 1: FADE.INO
 
 The above code *fade.ino* was one of many created to be familiarized
 with Arduino. It uses the MIC to cause a red LED on the breadboard to
