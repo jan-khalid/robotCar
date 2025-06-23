@@ -248,7 +248,7 @@ V= vin" is then continuously printed on the OLED display as shown in
 Figure 18 below.
 
 ![Figure 18: Voltage displayed on
-OLED](https://drive.google.com/uc?id=1DBQjFN1bjgvArRRwdoKlgfWlUmyniNyJ)
+OLED](https://drive.google.com/uc?id=1DBQjFN1bjgvArRRwdoKlgfWlUmyniNyJ = 331x467)
 
 In order to get distance_in_cm, a LOW-HIGH-LOW pulse is firstly sent
 using trigPin. Then using echoPin, the duration of the pulse is
