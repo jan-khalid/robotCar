@@ -83,7 +83,7 @@ Development Environment) software. The IDE software uses a C-like
 language, and created programs are flashed to the MIC attached to the
 vehicle via USB.
 
-<img src="https://drive.google.com/uc?id=1BioXmV5anK26FspSsU_1gXlOY780uIsM" width="236px" height="236px" alt="Figure description">
+<img src="https://drive.google.com/uc?id=1BioXmV5anK26FspSsU_1gXlOY780uIsM" width="500px" height="500px" alt="Figure description">
 
 The above code *fade.ino* was one of many created to be familiarized
 with Arduino. It uses the MIC to cause a red LED on the breadboard to
