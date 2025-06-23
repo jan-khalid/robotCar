@@ -335,11 +335,11 @@ Emitter, for emitting light, and the receiver which is an IR photodiode.
 The mechanism is triangulation. The distance is calculated by the angle
 of a reflected IR off a surface.
 
-<figure>
-<img src="https://drive.google.com/uc?id=1axNJ62H6PXatO20segMoIbVsJM5k6DAk" style="width:1.2135in;height:0.8046in"
-alt="" />
-<figcaption><p>Figure 22: IR distance sensor</p></figcaption>
-</figure>
+<p align="center">
+  <img src="https://drive.google.com/uc?id=1axNJ62H6PXatO20segMoIbVsJM5k6DAk" width="300" height="300" alt="IR distance sensor">
+  <br>
+  <em>Figure 22: IR distance sensor</em>
+</p>
 
 Two distance sensors were proposed to be used in this project, the
 ultrasonic sensor and the IR sensor. The justification in choosing the
