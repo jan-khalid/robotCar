@@ -373,7 +373,10 @@ installed in one traffic light. 00 and 03 are also the situations that
 are not allowing the car to enter the road or make a turn. 01 and 02 are
 also the situations that are allowing the car to pass through.
 
-![](https://drive.google.com/uc?id=1aW6_9zIVSRKh4fPjHjbYH11O8teZC9ye) ![](https://drive.google.com/uc?id=1eMj3kc0Qn-L3YyR11ZdHq_dhicPRJtIz)
+<p align="center">
+  <img src="https://drive.google.com/uc?id=1aW6_9zIVSRKh4fPjHjbYH11O8teZC9ye" width="300" style="display: inline-block; margin: 0 10px;" alt="Image 1">
+  <img src="https://drive.google.com/uc?id=1eMj3kc0Qn-L3YyR11ZdHq_dhicPRJtIz" width="300" style="display: inline-block; margin: 0 10px;" alt="Image 2">
+</p>
 
 Figure 24: Traffic conditions
 
