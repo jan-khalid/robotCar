@@ -267,11 +267,11 @@ calculated.
 photoresistors. Two photoresistors are installed at the front of the
 vehicle: one to the left and one to the right as shown in Figure 19.
 
-<figure>
-<img src="https://drive.google.com/uc?id=12eVXvhA-AHGWhs0XRHkqfw-r8SIoimR3" style="width:0.6277in;height:0.40599in"
-alt="" />
-<figcaption><p>Figure 19: Photoresistor placement</p></figcaption>
-</figure>
+<p align="center">
+  <img src="https://drive.google.com/uc?id=12eVXvhA-AHGWhs0XRHkqfw-r8SIoimR3" width="20" height="13" alt="Photoresistor placement">
+  <br>
+  <em>Figure 19: Photoresistor placement</em>
+</p>
 
 The two photoresistors are installed at a 45-degree offset to better
 detect light sources to the side of the car. Difference in light
