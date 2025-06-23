@@ -54,160 +54,210 @@ ways. Therefore, it is sensible to be familiar with the components given
 for use in this project before getting into the details of how the
 functions were implemented. Please refer to the component list below:
 
-+-------------+---------------------------------------------------------------------------+
-| > Component | ![](https://drive.google.com/uc?id=118TEAeUvNCsF4TVjg4kttbjW6Ix1c4GP){width="1.1552788713910762in"                      |
-| > 1         | height="0.817755905511811in"}                                             |
-|             |                                                                           |
-|             | Figure 2: Arduino Uno                                                     |
-|             |                                                                           |
-|             | Microcontroller (MIC) board:                                              |
-|             |                                                                           |
-|             | - 14 digital input/output pins                                            |
-|             |                                                                           |
-|             | - 6 PWM-supported output pins                                             |
-|             |                                                                           |
-|             | - 6 analog input pins                                                     |
-|             |                                                                           |
-|             | - USB connection                                                          |
-|             |                                                                           |
-|             | - Power jack \[2\]                                                        |
-+:===========:+:=========================================================================:+
-| > Component | ![](https://drive.google.com/uc?id=1FYyZ2DlzrN_P1PdUb55zT65jjyhkj4kh){width="0.7273173665791776in"                      |
-| > 2         | height="1.3347200349956256in"}                                            |
-|             |                                                                           |
-|             | Figure 3: Servo motors and wheels                                         |
-|             |                                                                           |
-|             | - Servo motors control wheel speed for vehicle motion                     |
-|             |                                                                           |
-|             | - Difference in wheel speed leads to turning                              |
-+-------------+---------------------------------------------------------------------------+
-| > Component | ![](https://drive.google.com/uc?id=1dCglXeIbOtbaShyn0qj69nz8WdPN-aq4){width="1.59667760279965in"                        |
-| > 3         | height="0.7297298775153106in"}                                            |
-|             |                                                                           |
-|             | Figure 4: Breadboard (top and back view) \[3\]                            |
-|             |                                                                           |
-|             | - Allows for impermanent, solderless, reusable circuit connections        |
-|             |                                                                           |
-|             | - Upper and lower 2 rows are horizontally connected to power supply       |
-|             |                                                                           |
-|             | - Columns are vertically connected with a horizontal middle gap for       |
-|             |   component connection                                                    |
-+-------------+---------------------------------------------------------------------------+
-| Component 4 | ![](https://drive.google.com/uc?id=1Z_yldZ-BVVMl_QOZEkbTgGLMChFdRzB7){width="1.0000535870516185in"                      |
-|             | height="0.643176946631671in"}                                             |
-|             |                                                                           |
-|             | Figure 5: QTI (Charge-Transfer-Infrared) Sensors                          |
-|             |                                                                           |
-|             | - Close-proximity-infrared emitter/receiver                               |
-|             |                                                                           |
-|             | - Used to detect the black grid lines                                     |
-|             |                                                                           |
-|             | - Darker the color, higher the raw value                                  |
-|             |                                                                           |
-|             | - White color detection raw value \~100                                   |
-|             |                                                                           |
-|             | - Black color detection raw value \~900                                   |
-|             |                                                                           |
-|             | - Critical value for white detection set to \<100                         |
-|             |                                                                           |
-|             | - Critical value for black detection set to \>700                         |
-+-------------+---------------------------------------------------------------------------+
-| Component 5 | ![](https://drive.google.com/uc?id=1dTLgiFMncumrsplaNH9nInJmex8phKXU){width="1.0609711286089238in"                      |
-|             | height="0.6312226596675415in"}                                            |
-|             |                                                                           |
-|             | Figure 6: Ultrasonic Sensor                                               |
-|             |                                                                           |
-|             | Principle:                                                                |
-|             |                                                                           |
-|             | - Ultrasonic waves emitted by the sensor are rebounded after hitting an   |
-|             |   object in front of it                                                   |
-|             |                                                                           |
-|             | - The time it takes for the wave to be received by the sensor is the      |
-|             |   travelling time                                                         |
-|             |                                                                           |
-|             | - Multiplying the speed of sound with half the travelling time gives the  |
-|             |   object distance                                                         |
-|             |                                                                           |
-|             | Application:                                                              |
-|             |                                                                           |
-|             | A command can be set to allow the machine to be stopped in front of the   |
-|             | object at a specific distance, in this case 4 cm before the object is     |
-|             | chosen.                                                                   |
-|             |                                                                           |
-|             | ![](https://drive.google.com/uc?id=14dTANm-hBEZKRvG2LJvE4W_1B6SBWvuQ){width="1.5466108923884514in"                      |
-|             | height="0.876010498687664in"}                                             |
-|             |                                                                           |
-|             | Figure 7: Ultrasonic sensor working principle \[4\]                       |
-+-------------+---------------------------------------------------------------------------+
-| Component 6 | ![](https://drive.google.com/uc?id=1NF92FzxPr3rEQtqQLV1sXrRPJAeINmlu){width="0.840764435695538in"                       |
-|             | height="0.840764435695538in"}                                             |
-|             |                                                                           |
-|             | Figure 8: Photoresistor                                                   |
-|             |                                                                           |
-|             | Detects light intensity                                                   |
-|             |                                                                           |
-|             | - ![](https://drive.google.com/uc?id=15fsUP3MU1duzVdhRyLyZxI9ozETNZ617){width="1.8756146106736657in"            |
-|             |   height="0.26291885389326336in"}                                         |
-|             |                                                                           |
-|             | - Constant 1 & 2 obtained by calibration                                  |
-|             |                                                                           |
-|             | - Calibration should be carried out in stable environment                 |
-+-------------+---------------------------------------------------------------------------+
-| Component 7 | ![](https://drive.google.com/uc?id=1jW8HM2Sy-0RnYXwAkTAOOf9JwDM4IB5T){width="1.6007534995625547in"                     |
-|             | height="0.9653171478565179in"}                                            |
-|             |                                                                           |
-|             | Figure 9: Color Sensor                                                    |
-|             |                                                                           |
-|             | - All colors come from 3 basic color combinations:                        |
-|             |                                                                           |
-|             |   - red, blue, and green.                                                 |
-|             |                                                                           |
-|             | - Photodiode sensor detects color                                         |
-|             |                                                                           |
-|             | - The color sensor has an 8x8 array of photodiodes 3 different color      |
-|             |   filters                                                                 |
-|             |                                                                           |
-|             |   - Each of the red, blue, green, and clear color filters have 16         |
-|             |     photodiode sensors each.                                              |
-|             |                                                                           |
-|             | - Every set of photodiode sensors are connected in parallel; we can read  |
-|             |   data from S2 and S3 pins, the logic is shown in Table 1.                |
-|             |                                                                           |
-|             |   ----------------------------------------------------------------------- |
-|             |             S2                      S3                     Color          |
-|             |   ----------------------- ----------------------- ----------------------- |
-|             |             LOW                     LOW                     Red           |
-|             |                                                                           |
-|             |             LOW                    HIGH                    Blue           |
-|             |                                                                           |
-|             |            HIGH                     LOW                    Clear          |
-|             |                                                                           |
-|             |            HIGH                    HIGH                    Green          |
-|             |   ----------------------------------------------------------------------- |
-|             |                                                                           |
-|             | Table 1: Color recognition logic                                          |
-+-------------+---------------------------------------------------------------------------+
-| Component 8 | ![](https://drive.google.com/uc?id=1AOd8ESvP3s61vNr7g-RnZea-8evAmHN5){width="1.2467530621172354in"                     |
-|             | height="0.9329877515310586in"}                                            |
-|             |                                                                           |
-|             | Figure 10: Transmitter/receiver inductive resonant coils                  |
-|             |                                                                           |
-|             | Function:                                                                 |
-|             |                                                                           |
-|             | - To induce a current via a time-varying magnetic field                   |
-|             |                                                                           |
-|             | Operating principle:                                                      |
-|             |                                                                           |
-|             | - Main voltage changes into high frequency alternating current (AC)       |
-|             |                                                                           |
-|             |   - Transfers to transmitter coil, initiating an alternative field        |
-|             |                                                                           |
-|             |   - Field reaches out to receiver coil, generating a current              |
-|             |                                                                           |
-|             | - Known as magnetic (or full) coupling                                    |
-+-------------+---------------------------------------------------------------------------+
-
-: Table 2: Component list
+<table>
+  <caption>Table 2: Component list</caption>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Component 1 -->
+    <tr>
+      <td>Component 1</td>
+      <td>
+        <figure>
+          <img src="https://drive.google.com/uc?id=118TEAeUvNCsF4TVjg4kttbjW6Ix1c4GP" alt="Arduino Uno" width="1.1552788713910762in" height="0.817755905511811in">
+          <figcaption>Figure 2: Arduino Uno</figcaption>
+        </figure>
+        <p>Microcontroller (MIC) board:</p>
+        <ul>
+          <li>14 digital input/output pins</li>
+          <li>6 PWM-supported output pins</li>
+          <li>6 analog input pins</li>
+          <li>USB connection</li>
+          <li>Power jack [2]</li>
+        </ul>
+      </td>
+    </tr>
+    
+    <!-- Component 2 -->
+    <tr>
+      <td>Component 2</td>
+      <td>
+        <figure>
+          <img src="https://drive.google.com/uc?id=1FYyZ2DlzrN_P1PdUb55zT65jjyhkj4kh" alt="Servo motors and wheels" width="0.7273173665791776in" height="1.3347200349956256in">
+          <figcaption>Figure 3: Servo motors and wheels</figcaption>
+        </figure>
+        <ul>
+          <li>Servo motors control wheel speed for vehicle motion</li>
+          <li>Difference in wheel speed leads to turning</li>
+        </ul>
+      </td>
+    </tr>
+    
+    <!-- Component 3 -->
+    <tr>
+      <td>Component 3</td>
+      <td>
+        <figure>
+          <img src="https://drive.google.com/uc?id=1dCglXeIbOtbaShyn0qj69nz8WdPN-aq4" alt="Breadboard" width="1.59667760279965in" height="0.7297298775153106in">
+          <figcaption>Figure 4: Breadboard (top and back view) [3]</figcaption>
+        </figure>
+        <ul>
+          <li>Allows for impermanent, solderless, reusable circuit connections</li>
+          <li>Upper and lower 2 rows are horizontally connected to power supply</li>
+          <li>Columns are vertically connected with a horizontal middle gap for component connection</li>
+        </ul>
+      </td>
+    </tr>
+    
+    <!-- Component 4 -->
+    <tr>
+      <td>Component 4</td>
+      <td>
+        <figure>
+          <img src="https://drive.google.com/uc?id=1Z_yldZ-BVVMl_QOZEkbTgGLMChFdRzB7" alt="QTI Sensors" width="1.0000535870516185in" height="0.643176946631671in">
+          <figcaption>Figure 5: QTI (Charge-Transfer-Infrared) Sensors</figcaption>
+        </figure>
+        <ul>
+          <li>Close-proximity-infrared emitter/receiver</li>
+          <li>Used to detect the black grid lines</li>
+          <li>Darker the color, higher the raw value</li>
+          <li>White color detection raw value ~100</li>
+          <li>Black color detection raw value ~900</li>
+          <li>Critical value for white detection set to &lt;100</li>
+          <li>Critical value for black detection set to &gt;700</li>
+        </ul>
+      </td>
+    </tr>
+    
+    <!-- Component 5 -->
+    <tr>
+      <td>Component 5</td>
+      <td>
+        <figure>
+          <img src="https://drive.google.com/uc?id=1dTLgiFMncumrsplaNH9nInJmex8phKXU" alt="Ultrasonic Sensor" width="1.0609711286089238in" height="0.6312226596675415in">
+          <figcaption>Figure 6: Ultrasonic Sensor</figcaption>
+        </figure>
+        <p>Principle:</p>
+        <ul>
+          <li>Ultrasonic waves emitted by the sensor are rebounded after hitting an object in front of it</li>
+          <li>The time it takes for the wave to be received by the sensor is the travelling time</li>
+          <li>Multiplying the speed of sound with half the travelling time gives the object distance</li>
+        </ul>
+        <p>Application:</p>
+        <p>A command can be set to allow the machine to be stopped in front of the object at a specific distance, in this case 4 cm before the object is chosen.</p>
+        <figure>
+          <img src="https://drive.google.com/uc?id=14dTANm-hBEZKRvG2LJvE4W_1B6SBWvuQ" alt="Ultrasonic sensor working principle" width="1.5466108923884514in" height="0.876010498687664in">
+          <figcaption>Figure 7: Ultrasonic sensor working principle [4]</figcaption>
+        </figure>
+      </td>
+    </tr>
+    
+    <!-- Component 6 -->
+    <tr>
+      <td>Component 6</td>
+      <td>
+        <figure>
+          <img src="https://drive.google.com/uc?id=1NF92FzxPr3rEQtqQLV1sXrRPJAeINmlu" alt="Photoresistor" width="0.840764435695538in" height="0.840764435695538in">
+          <figcaption>Figure 8: Photoresistor</figcaption>
+        </figure>
+        <p>Detects light intensity</p>
+        <figure>
+          <img src="https://drive.google.com/uc?id=15fsUP3MU1duzVdhRyLyZxI9ozETNZ617" width="1.8756146106736657in" height="0.26291885389326336in">
+        </figure>
+        <ul>
+          <li>Constant 1 & 2 obtained by calibration</li>
+          <li>Calibration should be carried out in stable environment</li>
+        </ul>
+      </td>
+    </tr>
+    
+    <!-- Component 7 -->
+    <tr>
+      <td>Component 7</td>
+      <td>
+        <figure>
+          <img src="https://drive.google.com/uc?id=1jW8HM2Sy-0RnYXwAkTAOOf9JwDM4IB5T" alt="Color Sensor" width="1.6007534995625547in" height="0.9653171478565179in">
+          <figcaption>Figure 9: Color Sensor</figcaption>
+        </figure>
+        <ul>
+          <li>All colors come from 3 basic color combinations:
+            <ul>
+              <li>red, blue, and green.</li>
+            </ul>
+          </li>
+          <li>Photodiode sensor detects color</li>
+          <li>The color sensor has an 8x8 array of photodiodes 3 different color filters
+            <ul>
+              <li>Each of the red, blue, green, and clear color filters have 16 photodiode sensors each.</li>
+            </ul>
+          </li>
+          <li>Every set of photodiode sensors are connected in parallel; we can read data from S2 and S3 pins, the logic is shown in Table 1.</li>
+        </ul>
+        <table>
+          <caption>Table 1: Color recognition logic</caption>
+          <thead>
+            <tr>
+              <th>S2</th>
+              <th>S3</th>
+              <th>Color</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>LOW</td>
+              <td>LOW</td>
+              <td>Red</td>
+            </tr>
+            <tr>
+              <td>LOW</td>
+              <td>HIGH</td>
+              <td>Blue</td>
+            </tr>
+            <tr>
+              <td>HIGH</td>
+              <td>LOW</td>
+              <td>Clear</td>
+            </tr>
+            <tr>
+              <td>HIGH</td>
+              <td>HIGH</td>
+              <td>Green</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    
+    <!-- Component 8 -->
+    <tr>
+      <td>Component 8</td>
+      <td>
+        <figure>
+          <img src="https://drive.google.com/uc?id=1AOd8ESvP3s61vNr7g-RnZea-8evAmHN5" alt="Transmitter/receiver inductive resonant coils" width="1.2467530621172354in" height="0.9329877515310586in">
+          <figcaption>Figure 10: Transmitter/receiver inductive resonant coils</figcaption>
+        </figure>
+        <p>Function:</p>
+        <ul>
+          <li>To induce a current via a time-varying magnetic field</li>
+        </ul>
+        <p>Operating principle:</p>
+        <ul>
+          <li>Main voltage changes into high frequency alternating current (AC)
+            <ul>
+              <li>Transfers to transmitter coil, initiating an alternative field</li>
+              <li>Field reaches out to receiver coil, generating a current</li>
+            </ul>
+          </li>
+          <li>Known as magnetic (or full) coupling</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 The vehicle is assembled as follows:
 
