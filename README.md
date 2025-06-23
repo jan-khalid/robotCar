@@ -268,7 +268,7 @@ photoresistors. Two photoresistors are installed at the front of the
 vehicle: one to the left and one to the right as shown in Figure 19.
 
 <p align="center">
-  <img src="https://drive.google.com/uc?id=12eVXvhA-AHGWhs0XRHkqfw-r8SIoimR3" width="20" height="13" alt="Photoresistor placement">
+  <img src="https://drive.google.com/uc?id=12eVXvhA-AHGWhs0XRHkqfw-r8SIoimR3" width="533" height="346" alt="Photoresistor placement">
   <br>
   <em>Figure 19: Photoresistor placement</em>
 </p>
