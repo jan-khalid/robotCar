@@ -679,33 +679,8 @@ white text and black background, and we carry out calculation of
 distance_in_cm. Then we set up two conditionals, one for distance_in_cm
 less than 20, the other is for otherwise.
 
-+-----------------------------------------------------------------------+
-| ![Appx 8: Conditional 1]                                              |
-| (https://drive.google.com/uc?id=1fOV58OdbssxVX9HHle1cPfC8GAiBGpBq){width="2.3581758530183725in"                    |
-| height="2.4807688101487315in"}                                        |
-|                                                                       |
-|                                                                       |
-|                                                                       |
-| In the first conditional, the car should stop once distance_in_cm is  |
-| less than 20. This is to ensure the car decelerates and stops so that |
-| the transistor and resistor coils make contact without tipping over   |
-| the charging station.                                                 |
-|                                                                       |
-| Furthermore, 'vin' continues to be displayed.                         |
-+=======================================================================+
-| ![Appx 9: Conditional 2]                                              |
-| (https://drive.google.com/uc?id=1w4YUp7Nhc4yZHk_FdSeWeMkttGbalh6K){width="2.604861111111111in"                     |
-| height="1.5083333333333333in"}\                                       |
-|                                                                       |
-|                                                                       |
-| If the distance_in_cm is not less than 20, the car should continue    |
-| going forward.                                                        |
-|                                                                       |
-| Furthermore, 'vin' continues to be displayed.                         |
-+-----------------------------------------------------------------------+
-| ![Appx 10: Car movement subroutines]                                  |
-| (https://drive.google.com/uc?id=1HHJKGWaBPtKx9q65sKplrN5O7oEuydIN){width="2.9166666666666665in"                    |
-| height="5.933637357830271in"}                                         |
-|                                                                       |
-|                                                                       |
-+-----------------------------------------------------------------------+
+| Appendix | Description | Image |
+|----------|-------------|-------|
+| **Appendix 8: Conditional 1** | In the first conditional, the car should stop once distance_in_cm is less than 20. This is to ensure the car decelerates and stops so that the transistor and resistor coils make contact without tipping over the charging station.<br><br>Furthermore, 'vin' continues to be displayed. | <img src="https://drive.google.com/uc?id=1fOV58OdbssxVX9HHle1cPfC8GAiBGpBq" width="226px" height="238px" alt="Appendix 8: Conditional 1"> |
+| **Appendix 9: Conditional 2** | If the distance_in_cm is not less than 20, the car should continue going forward.<br><br>Furthermore, 'vin' continues to be displayed. | <img src="https://drive.google.com/uc?id=1w4YUp7Nhc4yZHk_FdSeWeMkttGbalh6K" width="250px" height="145px" alt="Appendix 9: Conditional 2"> |
+| **Appendix 10: Car movement subroutines** |  | <img src="https://drive.google.com/uc?id=1HHJKGWaBPtKx9q65sKplrN5O7oEuydIN" width="280px" height="570px" alt="Appendix 10: Car movement subroutines"> |
