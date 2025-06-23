@@ -115,8 +115,7 @@ number of black lines passed in relation to a specific coordinate of the
 grid.
 
 ![Figure 12: QTI Sensors on the
-vehicle](./media/image14.png){width="1.110693350831146in"
-height="1.2480260279965005in"}
+vehicle](https://drive.google.com/uc?id=1FJKUIaAnn5IztIYPLIugyGx5l2bZAYDu)
 
 For example, to get from A(0, 0) to B(3, 2) as shown in Figure 13, the
 forward moving subroutine forwardCar() is called and counts the number
