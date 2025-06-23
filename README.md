@@ -43,8 +43,7 @@ braking at a point of interest, multi-point location traversal, charging
 wirelessly, light tracking, route optimization, and safety signalling
 for traffic. These are expounded upon in further sections of the paper.
 
-![Figure 1: 5x5 Grid](https://drive.google.com/uc?id=16VsBIpmmS2ZkoTbm-FzRvof4Wr3_QHSV){width="1.924453193350831in"
-height="1.0873370516185477in"}
+![Figure 1: 5x5 Grid](https://drive.google.com/uc?id=16VsBIpmmS2ZkoTbm-FzRvof4Wr3_QHSV)
 
 ## II. Methodology
 
@@ -56,7 +55,7 @@ for use in this project before getting into the details of how the
 functions were implemented. Please refer to the component list below:
 
 +-------------+---------------------------------------------------------------------------+
-| > Component | ![](./media/image2.png){width="1.1552788713910762in"                      |
+| > Component | ![](https://drive.google.com/uc?id=118TEAeUvNCsF4TVjg4kttbjW6Ix1c4GP){width="1.1552788713910762in"                      |
 | > 1         | height="0.817755905511811in"}                                             |
 |             |                                                                           |
 |             | Figure 2: Arduino Uno                                                     |
@@ -65,7 +64,7 @@ functions were implemented. Please refer to the component list below:
 |             |                                                                           |
 |             | - 14 digital input/output pins                                            |
 |             |                                                                           |
-|             |   - 6 PWM-supported output pins                                           |
+|             | - 6 PWM-supported output pins                                             |
 |             |                                                                           |
 |             | - 6 analog input pins                                                     |
 |             |                                                                           |
@@ -73,7 +72,7 @@ functions were implemented. Please refer to the component list below:
 |             |                                                                           |
 |             | - Power jack \[2\]                                                        |
 +:===========:+:=========================================================================:+
-| > Component | ![](./media/image3.png){width="0.7273173665791776in"                      |
+| > Component | ![](https://drive.google.com/uc?id=1FYyZ2DlzrN_P1PdUb55zT65jjyhkj4kh){width="0.7273173665791776in"                      |
 | > 2         | height="1.3347200349956256in"}                                            |
 |             |                                                                           |
 |             | Figure 3: Servo motors and wheels                                         |
@@ -82,7 +81,7 @@ functions were implemented. Please refer to the component list below:
 |             |                                                                           |
 |             | - Difference in wheel speed leads to turning                              |
 +-------------+---------------------------------------------------------------------------+
-| > Component | ![](./media/image4.png){width="1.59667760279965in"                        |
+| > Component | ![](https://drive.google.com/uc?id=1dCglXeIbOtbaShyn0qj69nz8WdPN-aq4){width="1.59667760279965in"                        |
 | > 3         | height="0.7297298775153106in"}                                            |
 |             |                                                                           |
 |             | Figure 4: Breadboard (top and back view) \[3\]                            |
@@ -94,7 +93,7 @@ functions were implemented. Please refer to the component list below:
 |             | - Columns are vertically connected with a horizontal middle gap for       |
 |             |   component connection                                                    |
 +-------------+---------------------------------------------------------------------------+
-| Component 4 | ![](./media/image5.png){width="1.0000535870516185in"                      |
+| Component 4 | ![](https://drive.google.com/uc?id=1Z_yldZ-BVVMl_QOZEkbTgGLMChFdRzB7){width="1.0000535870516185in"                      |
 |             | height="0.643176946631671in"}                                             |
 |             |                                                                           |
 |             | Figure 5: QTI (Charge-Transfer-Infrared) Sensors                          |
@@ -113,7 +112,7 @@ functions were implemented. Please refer to the component list below:
 |             |                                                                           |
 |             | - Critical value for black detection set to \>700                         |
 +-------------+---------------------------------------------------------------------------+
-| Component 5 | ![](./media/image6.png){width="1.0609711286089238in"                      |
+| Component 5 | ![](https://drive.google.com/uc?id=1dTLgiFMncumrsplaNH9nInJmex8phKXU){width="1.0609711286089238in"                      |
 |             | height="0.6312226596675415in"}                                            |
 |             |                                                                           |
 |             | Figure 6: Ultrasonic Sensor                                               |
@@ -135,27 +134,26 @@ functions were implemented. Please refer to the component list below:
 |             | object at a specific distance, in this case 4 cm before the object is     |
 |             | chosen.                                                                   |
 |             |                                                                           |
-|             | ![](./media/image7.png){width="1.5466108923884514in"                      |
+|             | ![](https://drive.google.com/uc?id=14dTANm-hBEZKRvG2LJvE4W_1B6SBWvuQ){width="1.5466108923884514in"                      |
 |             | height="0.876010498687664in"}                                             |
 |             |                                                                           |
 |             | Figure 7: Ultrasonic sensor working principle \[4\]                       |
 +-------------+---------------------------------------------------------------------------+
-| Component 6 | ![](./media/image8.png){width="0.840764435695538in"                       |
+| Component 6 | ![](https://drive.google.com/uc?id=1NF92FzxPr3rEQtqQLV1sXrRPJAeINmlu){width="0.840764435695538in"                       |
 |             | height="0.840764435695538in"}                                             |
 |             |                                                                           |
 |             | Figure 8: Photoresistor                                                   |
 |             |                                                                           |
 |             | Detects light intensity                                                   |
 |             |                                                                           |
-|             | - ![Text Description automatically generated with low                     |
-|             |   confidence](./media/image9.png){width="1.8756146106736657in"            |
+|             | - ![](https://drive.google.com/uc?id=15fsUP3MU1duzVdhRyLyZxI9ozETNZ617){width="1.8756146106736657in"            |
 |             |   height="0.26291885389326336in"}                                         |
 |             |                                                                           |
 |             | - Constant 1 & 2 obtained by calibration                                  |
 |             |                                                                           |
 |             | - Calibration should be carried out in stable environment                 |
 +-------------+---------------------------------------------------------------------------+
-| Component 7 | ![](./media/image10.png){width="1.6007534995625547in"                     |
+| Component 7 | ![](https://drive.google.com/uc?id=1jW8HM2Sy-0RnYXwAkTAOOf9JwDM4IB5T){width="1.6007534995625547in"                     |
 |             | height="0.9653171478565179in"}                                            |
 |             |                                                                           |
 |             | Figure 9: Color Sensor                                                    |
@@ -189,7 +187,7 @@ functions were implemented. Please refer to the component list below:
 |             |                                                                           |
 |             | Table 1: Color recognition logic                                          |
 +-------------+---------------------------------------------------------------------------+
-| Component 8 | ![](./media/image11.png){width="1.2467530621172354in"                     |
+| Component 8 | ![](https://drive.google.com/uc?id=1AOd8ESvP3s61vNr7g-RnZea-8evAmHN5){width="1.2467530621172354in"                     |
 |             | height="0.9329877515310586in"}                                            |
 |             |                                                                           |
 |             | Figure 10: Transmitter/receiver inductive resonant coils                  |
