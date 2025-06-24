@@ -635,7 +635,7 @@ If no red spot is detected, the car stops at (5, 5) i.e. when counter ==
 shown as below: 
 
 <figure>
-<img src="https://drive.google.com/uc?id=1uwq1s3cdtwQnMsg25BbubFQk-7Lb891Y" style="width:2.60504in;height:1.26115in"
+<img src="https://drive.google.com/uc?id=1uwq1s3cdtwQnMsg25BbubFQk-7Lb891Y" height="350"
 alt="" />
 <figcaption><p>Appx 6: Interface of OLED with Arduino</p></figcaption>
 </figure>
