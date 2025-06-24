@@ -122,8 +122,8 @@ Once 3 intersections are counted, stop() is called to brake the car.
   <em>Figure 13: A(0, 0) to B(3, 2) path</em>
 </p>
 
-[Function 2: Going to a particular coordinate with
-obstacles]{.underline} is an expansion of Function 1. The extra
+**_Function 2: Going to a particular coordinate with
+obstacles_** is an expansion of Function 1. The extra
 component involved is the ultrasonic sensor. By placing the ultrasonic
 sensor at the front of the vehicle, any obstacle in front can be
 detected.
@@ -148,7 +148,7 @@ alt="" />
 <figcaption><p>Figure 14: A(0, 0) to B(4, 5) path</p></figcaption>
 </figure>
 
-[Function 3: Braking at a point of interest]{.underline} searches for a
+**_Function 3: Braking at a point of interest_** searches for a
 specific-color spot and returns the coordinate of the spot. The color
 sensor is thus required for this function. In order to guarantee that
 the car reaches the point of interest, all possible locations must be
@@ -174,7 +174,7 @@ alt="Chart Description automatically generated" />
 <figcaption><p>Figure 15: Red spot at (4, 3)</p></figcaption>
 </figure>
 
-[Function 4: Multi-point location traversal]{.underline} allows the car
+**_Function 4: Multi-point location traversal_** allows the car
 to visit a set of coordinates. The sets coordinates of coordinates are
 initialized in an array. The OLED would light up in green and pause for
 2 seconds when the car visits one of the coordinates.
@@ -218,7 +218,7 @@ alt="" />
 path</p></figcaption>
 </figure>
 
-[Function 5: Wireless charging]{.underline} requires the use of
+**_Function 5: Wireless charging_** requires the use of
 inductive resonant coils. As shown in Figure 17, the transmitter coil is
 connected to a battery bank to provide power and acts as a charging
 station, while the receiver coil is attached to the front of the car to
@@ -256,7 +256,7 @@ obtained. By dividing the duration by 2 (to account for sound
 refletion), then dividing by 29.1 (pace of sound), the distance_in_cm is
 calculated.
 
-[Function 6: Light tracking]{.underline} requires the use of
+**_Function 6: Light tracking_** requires the use of
 photoresistors. Two photoresistors are installed at the front of the
 vehicle: one to the left and one to the right as shown in Figure 19.
 
@@ -278,7 +278,7 @@ light source.
   <em>Figure 20: Light tracking</em>
 </p>
 
-[Function 7: Route optimization]{.underline} is an advancement of
+**_Function 7: Route optimization_** is an advancement of
 Functions 1 & 3 in that it allows for diagonal movement which saves
 time.For the programming part, two kinds of cases should be considered:
 
@@ -315,7 +315,7 @@ alt="" />
 <figcaption><p>Figure 21: Diagonal pathing</p></figcaption>
 </figure>
 
-[Function 8: Safety signalling]{.underline} was not completed. However,
+**~~Function 8: Safety signalling~~** was not completed. However,
 the proposed method of implementation is as followed:
 
 Traffic safety signalling simulates actual traffic conditions to test
@@ -395,7 +395,7 @@ As stated previously, there were multiple difficulties faced during the
 project. There were potential hardware and coding issues that
 contributed to the difficulties faced.
 
-[One of the motors was found to not function properly.]{.underline}
+**_One of the motors was found to not function properly._**
 Different debugging methods were used. It was not a software issue as
 the software worked for other motors. Therefore, it had to be a hardware
 issue. The issue was not with the motor itself as placing the motor on
@@ -406,8 +406,8 @@ component one-by-one, the error was still not found. It was only after
 changing the pins used did the motor on one side of the car work, hence
 the issue was found to be a broken pin.
 
-[Initially, the car had difficulty moving in line with the
-grid.]{.underline} This problem might have been caused by the position
+**_Initially, the car had difficulty moving in line with the
+grid._** This problem might have been caused by the position
 of the QTI sensor. By observing the monitoring window of the Arduino
 IDE, it was found that the reading of black lines would increase
 significantly in effectiveness only if the QTI sensor were placed very
@@ -422,8 +422,8 @@ Figure 25, which improved its sensitivity.
   <em>Figure 25: Updated QTI sensor position</em>
 </p>
 
-[Function 2: Going to a particular coordinate with
-obstacles]{.underline} experienced ultrasonic sensor detection error
+**_Function 2: Going to a particular coordinate with
+obstacles_** experienced ultrasonic sensor detection error
 issues possibly caused by the internal noise of the sensor. When the
 loop is executing, the returned value of '0' would be recorded and the
 function of the program would recognize it as an obstacle. Therefore, in
@@ -431,7 +431,7 @@ order to solve this issue, a delay time (i.e. 'delay(10)') was added
 inside the loop. If there was no delaying time, resultant impedance
 would be high, therefore the accuracy would be lower.
 
-[Function 3: Wireless charging]{.underline} occured without the grid and
+**_Function 3: Wireless charging_** occured without the grid and
 had pathing error likely due to differences in internal resistances of
 the servo motors. The outcome of this situation would be causing the
 path of the car to be bent. Therefore, the speed of the two motors
@@ -445,7 +445,7 @@ input speed.
   <strong>CODE 2: SERVO CORRECTION</strong>
 </p>
 
-[Function 6: Light tracking]{.underline} varies in how functional it was
+**_Function 6: Light tracking_** varies in how functional it was
 based on the calibration process. Initially, the car was not following
 the flashlight from a smartphone well. This was possibly due to the fact
 that the calibration of the photodiode was carried out outdoors with
@@ -461,7 +461,7 @@ alt="" />
 Equation</p></figcaption>
 </figure>
 
-[Function 7: Route optimization]{.underline} required a new 5x5 grid
+**_Function 7: Route optimization_** required a new 5x5 grid
 with diagonal options. The intersection in the grid was made by four
 lines of black tape. The car could not move comfortably since the
 thickness of intersection was different with different grid lines. The
@@ -469,7 +469,7 @@ car was not able to go to some specific point and the more intersections
 it needed to travel, the higher the likelihood it would steer
 off-course.
 
-[Function 8: Safety signalling]{.underline} was not implemented due to
+**~~Function 8: Safety signalling~~** was not implemented due to
 time and material constraint.
 
 ## iV. conclusion
@@ -488,7 +488,7 @@ colored-point coordinate locating.
 
 ### B. Future work
 
-[GPS sensors]{.underline} as an upgraded replacement to the grid system
+**_GPS sensors_** as an upgraded replacement to the grid system
 seems like the next logical step to take in the future. The ability for
 a vehicle system to implement GPS data in order to move from one point
 to another would be a huge increase in versatility.
@@ -498,7 +498,7 @@ and basic point-to-point travel. However, it cannot be transferred
 immediately to upscaled and roadside application. Therefore, it is
 important to be familiarized with GPS implementation.
 
-[Real-time collision avoidance]{.underline} is another logical
+**_Real-time collision avoidance_** is another logical
 development to make. An autonomous vehicle in the real world should not
 only be able to avoid static obstacles, but also dynamic obstacles such
 as pedestrians and other vehicles in motion.
@@ -652,7 +652,7 @@ The connection of the pins is shown in the table below:
 
   : Appx 7: OLED pin connection
 
-[Function 5: Wireless charging]{.underline}
+**_Function 5: Wireless charging_**
 
 Different servo motors might have a slightly different turning speed.
 Therefore, the speed should be balanced.
