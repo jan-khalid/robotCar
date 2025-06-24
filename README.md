@@ -446,11 +446,11 @@ needed to be balanced via software aid. In the code shown below, the
 speed would be balanced by using the actual speed to plus or minus the
 input speed.
 
-<figure>
-<img src="https://drive.google.com/uc?id=1_rxsUqJH6nXka6eaLRRCICCoU4nsd5ou" style="width:1.72519in;height:4.0666in"
-alt="" />
-<figcaption><p>CODE 2: SERVO CORRECTION</p></figcaption>
-</figure>
+<p align="center">
+  <img src="https://drive.google.com/uc?id=1_rxsUqJH6nXka6eaLRRCICCoU4nsd5ou" height="800" alt="SERVO CORRECTION">
+  <br>
+  <strong>CODE 2: SERVO CORRECTION</strong>
+</p>
 
 [Function 6: Light tracking]{.underline} varies in how functional it was
 based on the calibration process. Initially, the car was not following
