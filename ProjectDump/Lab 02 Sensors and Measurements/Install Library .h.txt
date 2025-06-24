@@ -1,0 +1,21 @@
+Install library :
+
+Example : Adafruit_SSD1331.h
+
+           https://github.com/adafruit/Adafruit-SSD1331-OLED-Driver-Library-for-Arduino
+
+           Download the library
+
+           Arduino : Sketch --> Include Library
+
+                                                         --> Manage Library  (update installed library)
+
+                                                          --> ADD .Zip Library (upload downloaded library)
+
+May be also : OLED : Adafruit_GFX.h
+
+                       Color sensor: SoftwareSerial.h
+
+After install the library, check the files in the library folder.  If not all files in the downloaded zip files installed, copy all files from zip folder to your library folder.
+
+Document --> Arduino --> Library --> ....
