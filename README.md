@@ -423,11 +423,11 @@ at a relatively high position -- level with the photo-diode sensor. The
 QTI sensor was therefore installed at a lower position, as shown in
 Figure 25, which improved its sensitivity.
 
-<figure>
-<img src="https://drive.google.com/uc?id=1F-_M9iCeVY6ljVtr9MR5od5a5qbKeM58" style="width:2.26816in;height:1.49102in"
-alt="" />
-<figcaption><p>Figure 25: Updated QTI sensor position</p></figcaption>
-</figure>
+<p align="center">
+  <img src="https://drive.google.com/uc?id=1F-_M9iCeVY6ljVtr9MR5od5a5qbKeM58" width="650" alt="Updated QTI sensor position">
+  <br>
+  <em>Figure 25: Updated QTI sensor position</em>
+</p>
 
 [Function 2: Going to a particular coordinate with
 obstacles]{.underline} experienced ultrasonic sensor detection error
