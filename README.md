@@ -578,45 +578,41 @@ If, for instance, the destination is (3, 2) with dhe initial point (0,
 of intersections by 3, then turnCarOnsiteL() and count for two
 intersections and stop().
 
-[Function 2: Going to a particular coordinate with
-obstacles]{.underline}
+## Function 2: Going to a particular coordinate with obstacles
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Programme Flow                                                                                                                                          |
-+:=============================================================+:=========================================================================================+
-| The logic is very similar to Task 1.1. However, we also consider obstacles and assume an obstacle                                                       |
-| no more than 15 cm wide.                                                                                                                                |
-|                                                                                                                                                         |
-| We initialize the program for the QTI pins, motor pins, and ultrasonic pins. We initialize the                                                          |
-| variables for counting black lines. And we initialize the constants for the destination                                                                 |
-| coordinates 'x' and 'y'.                                                                                                                                |
-|                                                                                                                                                         |
-| The car moves along the positive direction of the x-axis until 'counter of x' is equal to 'x'.                                                          |
-| Then the car turns left. Then the car goes forward in the positive y direction until 'counter of                                                        |
-| y' equals 'y'.                                                                                                                                          |
-+-------------------------------------------------------------------------------------------------------------------+-------------------------------------+
-| How the car alters its route if obstacles within specified                                                        | 'move around left' subroutine on    |
-| dimensions are detected by the ultrasonic sensor.                                                                 | the nearest gridline                |
-|                                                                                                                   | (turnCarOnsiteL \> forwardCar \>    |
-| If wider obstacles are used, the forwardCar duration can be                                                       | turnCarOnsiteR \> forwardCar \>     |
-| altered, and the increment of 'x' or 'y' can be greater than                                                      | turnCarOnsiteR \> forwardCar\>      |
-| one.                                                                                                              | turnCarOnsiteL). The 'counter of x' |
-|                                                                                                                   | is incremented by 1, and the car    |
-|                                                                                                                   | continues forward in the x-axis     |
-|                                                                                                                   | until 'counter of x' equals 'x'.    |
-|                                                                                                                   |                                     |
-|                                                                                                                   | However, if the car is moving along |
-|                                                                                                                   | the y-axis, the car would instead   |
-|                                                                                                                   | execute 'move around right'         |
-|                                                                                                                   | subroutine. This is to ensure the   |
-|                                                                                                                   | car stays within the grid           |
-+-------------------------------------------------------------------------------------------------------------------+                                     |
-| ![Appx 4: Breadboard connection for Function 2](https://drive.google.com/uc?id=1s0saxPuTelqDpoydWcpWgfgfpdjvtHRw) |                                     |
-|                                                                                                                   |                                     |
-|                                                                                                                   |                                     |
-|                                                                                                                   |                                     |
-|                                                                                                                   |                                     |
-+-------------------------------------------------------------------------------------------------------------------+-------------------------------------+
+### Programme Flow
+
+<table>
+  <tr>
+    <td colspan="2">
+      The logic is very similar to Task 1.1. However, we also consider obstacles and assume an obstacle no more than 15 cm wide.
+      <br><br>
+      We initialize the program for the QTI pins, motor pins, and ultrasonic pins. We initialize the variables for counting black lines. And we initialize the constants for the destination coordinates 'x' and 'y'.
+      <br><br>
+      The car moves along the positive direction of the x-axis until 'counter of x' is equal to 'x'. Then the car turns left. Then the car goes forward in the positive y direction until 'counter of y' equals 'y'.
+    </td>
+  </tr>
+  <tr>
+    <td width="60%">
+      <strong>How the car alters its route if obstacles within specified dimensions are detected by the ultrasonic sensor.</strong>
+      <br><br>
+      If wider obstacles are used, the forwardCar duration can be altered, and the increment of 'x' or 'y' can be greater than one.
+    </td>
+    <td width="40%">
+      <strong>'move around left' subroutine</strong> on the nearest gridline<br>
+      (turnCarOnsiteL → forwardCar → turnCarOnsiteR → forwardCar → turnCarOnsiteR → forwardCar → turnCarOnsiteL). The 'counter of x' is incremented by 1, and the car continues forward in the x-axis until 'counter of x' equals 'x'.
+      <br><br>
+      However, if the car is moving along the y-axis, the car would instead execute 'move around right' subroutine. This is to ensure the car stays within the grid.
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <img src="https://drive.google.com/uc?id=1s0saxPuTelqDpoydWcpWgfgfpdjvtHRw" width="400" alt="Appx 4: Breadboard connection for Function 2">
+      <br>
+      <em>Appx 4: Breadboard connection for Function 2</em>
+    </td>
+  </tr>
+</table>
 
 [Function 3: Braking at a point of interest]{.underline}
 
