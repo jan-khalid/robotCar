@@ -91,8 +91,8 @@ gradually fade between off and full brightness and vice versa
 continuously. The structure of the code is typical for Arduino
 programming, in that it contains 2 main parts: `void setup()` -- which is
 executed in only once in the beginning and is used to declare which pins
-are to be used and whether they are to be input or output pins; and void
-loop() -- which is executed afterwards and repeats forever, comprising
+are to be used and whether they are to be input or output pins; and `void
+loop()` -- which is executed afterwards and repeats forever, comprising
 the function and task of the main program.
 
 RUNS CONTINUOUSLY
@@ -111,10 +111,10 @@ logical flows, please refer to the Appendix.
 vehicle](https://drive.google.com/uc?id=1FJKUIaAnn5IztIYPLIugyGx5l2bZAYDu)
 
 For example, to get from A(0, 0) to B(3, 2) as shown in Figure 13, the
-forward moving subroutine forwardCar() is called and counts the number
-of intersections until 3. Then turnCarOnsiteL() is called to make a
+forward moving subroutine `forwardCar()` is called and counts the number
+of intersections until 3. Then `turnCarOnsiteL()` is called to make a
 right-angled left turn on (3, 0) and counts the number of intersections.
-Once 3 intersections are counted, stop() is called to brake the car.
+Once 3 intersections are counted, `stop()` is called to brake the car.
 
 <p align="center">
   <img src="https://drive.google.com/uc?id=1cIlL0nmPykt9AdBE6WPjhxRsGCEVJXQ8" width="350" alt="Figure 13: A(0, 0) to B(3, 2) path">
@@ -129,14 +129,14 @@ sensor at the front of the vehicle, any obstacle in front can be
 detected.
 
 If a car detects a small obstacle (within 14 cm), depending on its
-position on the grid, the car executes either the move around left() or
-move round right() subroutine on the nearest gridline -- ensuring the
+position on the grid, the car executes either the `move_around_left()` or
+`move_around_right()` subroutine on the nearest gridline -- ensuring the
 car avoids the obstacle while staying on the grid
 
 For example, to get from A(0, 0) to B(4, 5) as shown in Figure 14, the
 car first detects an obstacle right right after (1, 0). Once the car is
-directly on (1, 0) and since the car is on 'y = 0', it executes move
-around left(), which, since the car is travelling in the 'x' direction,
+directly on (1, 0) and since the car is on 'y = 0', it executes `move_around_left()`,
+which, since the car is travelling in the 'x' direction,
 tells the car to increase its 'y' value by 1, then 'x' value by 1, then
 finally decrease its 'y' value by 1 -- landing on (2, 0) and continuing
 its remaining journey. The logic for the rest of the trip is similar to
@@ -157,15 +157,15 @@ sensor detects a red-colored spot. The path taken is recorded, and the
 coordinate can therefore be displayed. The information exchange process
 is achieved by the MQTT system. ^{see\ Appendix}^
 
-The line-by-line sweep uses a volatile int called counter to count the
-number of black lines. If the value of counter is both a multiple of 5
-and 10, then the go right() subroutine. If the value of counter is a
-multiple of 5 but not of 10, then go left()is executed instead.
+The line-by-line sweep uses a `volatile int` called counter to count the
+number of black lines. If the value of `counter` is both a multiple of 5
+and 10, then the `go_right()` subroutine. If the value of `counter` is a
+multiple of 5 but not of 10, then `go_left()` is executed instead.
 
 Figure 8: braking at 'b'
 
 For example, a red spot as shown in Figure 15 is detected and the car
-stops at (4, 3). The value of counter == 19 is then converted to its
+stops at (4, 3). The value of `counter == 19` is then converted to its
 corresponding coordinate (4, 3) to be displayed on the car's OLED.
 
 <figure>
@@ -192,23 +192,23 @@ the variables for counting black lines, the color definitions, and the
 initial cardinal direction that the car is facing - are set up. The
 arrays for the 4 cardinal directions, and sets of coordinates are also
 set up. The array for the cardinal directions if clockwise is positive
-is \[N, E, S, W\].
+is `[N, E, S, W]`.
 
 Referring to the path shown in Figure 16 for example, the car starts
-from A(4, 1) and is expected to go 'west'. Thus, int dir = 4 is set to
+from A(4, 1) and is expected to go 'west'. Thus, `int dir = 4` is set to
 corresponds to the 4^th^ element of the array, which is 'W'. Since the
 car is facing 'west', the value of 'x' of the car should decrease with
 every increase of counter of x (the integer in the program that counts
 the number of black lines passed on the x-direction).
 
-Once counter of x equals the difference of starting coord (i.e. A) and
-landing coord (i.e. B), the car turns north and dir is incremented by 1.
-The car then moves north until counter of y is equal to the magnitude of
+Once `counter_of_x` equals the difference of s`tarting_coord` (i.e. A) and
+`landing_coord` (i.e. B), the car turns north and `dir` is incremented by 1.
+The car then moves north until `counter_of_y` is equal to the magnitude of
 difference between the y-coordinates of A and B. Once the car reaches B,
 it stops for 2 seconds and emits green via its OLED. B is set as
-starting coord and C is set as landing coord -- continuing the journey.
+`starting_coord` and C is set as `landing_coord` -- continuing the journey.
 
-Once the counter of sets of coords passed reaches the length of the
+Once the `counter_of_sets_of_coords_passed` reaches the length of the
 array of coordinates, i.e., 3, the car stops.
 
 <figure>
@@ -233,27 +233,27 @@ coils to touch each other without knocking over the charging station.
 
 Figure 17: Receiver coil (car) and transmitter coil (charging station)
 
-In order to control the speed of the servo motor, analogWrite() should
+In order to control the speed of the servo motor, `analogWrite()` should
 be used to write the PWM to the continuous servo motors. The ultrasonic
 sensor is used to detect the obstacle in front of the car.
 
 By trial and error, it was found that stopping the car once
-distance_in_cm was less than 20 resulted in enough deceleration such
+`distance_in_cm` was less than 20 resulted in enough deceleration such
 that the transmitter and receiver coils touch, but does not cause the
 charging station to tip over.
 
-In order to display the voltage to the OLED, the analogRead() value of
-pin A0 is first multiplied by 5, then divided by 1024 to get vin. "INPUT
-V= vin" is then continuously printed on the OLED display as shown in
+In order to display the voltage to the OLED, the `analogRead()` value of
+pin A0 is first multiplied by 5, then divided by 1024 to get `vin`. "INPUT
+V= `vin`" is then continuously printed on the OLED display as shown in
 Figure 18 below.
 
 ![Figure 18: Voltage displayed on
 OLED](https://drive.google.com/uc?id=1DBQjFN1bjgvArRRwdoKlgfWlUmyniNyJ = 331x467)
 
-In order to get distance_in_cm, a LOW-HIGH-LOW pulse is firstly sent
-using trigPin. Then using echoPin, the duration of the pulse is
+In order to get `distance_in_cm`, a LOW-HIGH-LOW pulse is firstly sent
+using `trigPin`. Then using `echoPin`, the duration of the pulse is
 obtained. By dividing the duration by 2 (to account for sound
-refletion), then dividing by 29.1 (pace of sound), the distance_in_cm is
+refletion), then dividing by 29.1 (pace of sound), the `distance_in_cm` is
 calculated.
 
 **_Function 6: Light tracking_** requires the use of
@@ -567,8 +567,8 @@ alt="" />
 </figure>
 
 If, for instance, the destination is (3, 2) with dhe initial point (0,
-0) at the left top corner, forwardCar() is called and counts the number
-of intersections by 3, then turnCarOnsiteL() and count for two
+0) at the left top corner, `forwardCar()` is called and counts the number
+of intersections by 3, then `turnCarOnsiteL()` and count for two
 intersections and stop().
 
 ## Function 2: Going to a particular coordinate with obstacles
