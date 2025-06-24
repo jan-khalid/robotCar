@@ -462,7 +462,7 @@ for 'Constant 1' and 'Constant 2' of the equation below were obtained --
 leading to better light tracking.
 
 <figure>
-<img src="https://drive.google.com/uc?id=15fsUP3MU1duzVdhRyLyZxI9ozETNZ617" style="width:2.2621in;height:0.3171in"
+<img src="https://drive.google.com/uc?id=15fsUP3MU1duzVdhRyLyZxI9ozETNZ617" height="300"
 alt="" />
 <figcaption><p>Equation 1: Photodiode Calibration
 Equation</p></figcaption>
