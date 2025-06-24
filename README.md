@@ -521,25 +521,15 @@ project.
 
 ## References
 
-  --------------------------------------------------------------------------------------------------
-  \[\[1\]   Mordor Intelligence, "United States Autonomous Car Market - Growth, Trends, Covid-19
-            Impact, and Forecasts (2022 - 2027)," 2022.
-  --------- ----------------------------------------------------------------------------------------
-  \[\[2\]   Arduino, "UNO R3 Datasheet," \[Online\].-Available:
-            https://docs.arduino.cc/static/e7bd0e090ada1e27cf2c4a63d3096cbc/A000066-datasheet.pdf.
-            \[Accessed 2023\].
+[1] Mordor Intelligence, "United States Autonomous Car Market - Growth, Trends, Covid-19 Impact, and Forecasts (2022 - 2027)," 2022.  
 
-  \[\[3\]   "BioBuilder: Synthetic Biology in the Lab," Publicism, 2015. \[Online\]. Available:
-            https://publicism.info/science/biobuilder/8.html.
+[2] Arduino, "UNO R3 Datasheet," [Online]. Available: [https://docs.arduino.cc/static/e7bd0e090ada1e27cf2c4a63d3096cbc/A000066-datasheet.pdf](https://docs.arduino.cc/static/e7bd0e090ada1e27cf2c4a63d3096cbc/A000066-datasheet.pdf) [Accessed 2023].  
 
-  \[\[4\]   microsonic, "Ultrasonic technology," \[Online\].-Available:
-            https://www.microsonic.de/en/support/ultrasonic-technology/principle.htm.
+[3] "BioBuilder: Synthetic Biology in the Lab," Publicism, 2015. [Online]. Available: [https://publicism.info/science/biobuilder/8.html](https://publicism.info/science/biobuilder/8.html).  
 
-  \[\[5\]   wikipedia, "Microcontroller wiki," \[Online\].-Available:
-            https://en.wikipedia.org/wiki/Microcontroller.
-  --------------------------------------------------------------------------------------------------
+[4] microsonic, "Ultrasonic technology," [Online]. Available: [https://www.microsonic.de/en/support/ultrasonic-technology/principle.htm](https://www.microsonic.de/en/support/ultrasonic-technology/principle.htm).  
 
-## 
+[5] Wikipedia, "Microcontroller," [Online]. Available: [https://en.wikipedia.org/wiki/Microcontroller](https://en.wikipedia.org/wiki/Microcontroller).  
 
 ## Appendix
 
