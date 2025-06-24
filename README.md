@@ -682,8 +682,8 @@ white text and black background, and we carry out calculation of
 distance_in_cm. Then we set up two conditionals, one for distance_in_cm
 less than 20, the other is for otherwise.
 
-| Appendix | Description | Image |
-|----------|-------------|-------|
-| **Appendix 8: Conditional 1** | In the first conditional, the car should stop once distance_in_cm is less than 20. This is to ensure the car decelerates and stops so that the transistor and resistor coils make contact without tipping over the charging station.<br><br>Furthermore, 'vin' continues to be displayed. | <img src="https://drive.google.com/uc?id=1fOV58OdbssxVX9HHle1cPfC8GAiBGpBq" width="226px" height="238px" alt="Appendix 8: Conditional 1"> |
-| **Appendix 9: Conditional 2** | If the distance_in_cm is not less than 20, the car should continue going forward.<br><br>Furthermore, 'vin' continues to be displayed. | <img src="https://drive.google.com/uc?id=1w4YUp7Nhc4yZHk_FdSeWeMkttGbalh6K" width="250px" height="145px" alt="Appendix 9: Conditional 2"> |
-| **Appendix 10: Car movement subroutines** |  | <img src="https://drive.google.com/uc?id=1HHJKGWaBPtKx9q65sKplrN5O7oEuydIN" width="280px" height="570px" alt="Appendix 10: Car movement subroutines"> |
+| Appendix | Content |
+|----------|---------|
+| **Appendix 8: Conditional 1** | <img src="https://drive.google.com/uc?id=1fOV58OdbssxVX9HHle1cPfC8GAiBGpBq" width="226" alt="Conditional 1"><br><br>In the first conditional, the car should stop once distance_in_cm is less than 20. This ensures the car decelerates properly so the transistor and resistor coils make contact without tipping over the charging station.<br><br>Furthermore, 'vin' continues to be displayed. |
+| **Appendix 9: Conditional 2** | <img src="https://drive.google.com/uc?id=1w4YUp7Nhc4yZHk_FdSeWeMkttGbalh6K" width="250" alt="Conditional 2"><br><br>If distance_in_cm is not less than 20, the car continues going forward.<br><br>Furthermore, 'vin' continues to be displayed. |
+| **Appendix 10: Car movement subroutines** | <img src="https://drive.google.com/uc?id=1HHJKGWaBPtKx9q65sKplrN5O7oEuydIN" width="280" alt="Car movement subroutines"> |
