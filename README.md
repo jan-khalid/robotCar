@@ -89,7 +89,7 @@ The above code *fade.ino* was one of many created to be familiarized
 with Arduino. It uses the MIC to cause a red LED on the breadboard to
 gradually fade between off and full brightness and vice versa
 continuously. The structure of the code is typical for Arduino
-programming, in that it contains 2 main parts: void setup() -- which is
+programming, in that it contains 2 main parts: `void setup()` -- which is
 executed in only once in the beginning and is used to declare which pins
 are to be used and whether they are to be input or output pins; and void
 loop() -- which is executed afterwards and repeats forever, comprising
