@@ -105,14 +105,7 @@ logical flows, please refer to the Appendix.
 
 ### A. Functions 
 
-[Function 1: Going to a particular coordinate without
-obstacles]{.underline} requires QTI sensors as its main sensors. There
-are four QTI sensors installed at the bottom of the vehicle, as shown in
-Figure 12. The front two QTI sensors are combined to detect the straight
-black line on the ground, ensuring the vehicles moves on a straight
-line. The QTI sensors installed under the motors are used to count the
-number of black lines passed in relation to a specific coordinate of the
-grid.
+<span style="color: turquoise; text-decoration: underline;">Function 1: Going to a particular coordinate without obstacles</span> requires QTI sensors as its main sensors. There are four QTI sensors installed at the bottom of the vehicle, as shown in Figure 12. The front two QTI sensors are combined to detect the straight black line on the ground, ensuring the vehicle moves on a straight line. The QTI sensors installed under the motors are used to count the number of black lines passed in relation to a specific coordinate of the grid.
 
 ![Figure 12: QTI Sensors on the
 vehicle](https://drive.google.com/uc?id=1FJKUIaAnn5IztIYPLIugyGx5l2bZAYDu)
