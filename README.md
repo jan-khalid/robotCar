@@ -533,23 +533,30 @@ project.
 
 ## Appendix
 
-[Function 1: Going to a particular coordinate without
-obstacles]{.underline}
+### Function 1: Going to a particular coordinate without obstacles
 
-+----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+
-| **Situation 1:**                                                                 | **Situation 2:**                                                                 |
-+:=================================================================================+:=================================================================================+
-| When the left and right QTI sensors detect a value smaller                       | When all of the four sensors detect a number larger than                         |
-| than 100 and the middle two sensors detect a value larger                        | 700, it indicates the car is at the intersections of the two                     |
-| than700, the car would move straight on the grid.                                | lines. An instruction can be given to control the car to                         |
-|                                                                                  | turn left or turn right.                                                         |
-+----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+
-| ![Situation 1](https://drive.google.com/uc?id=1bK-X87u7bcSnTaC74WTx9nVi6_2OVmq2) | ![Situation 2](https://drive.google.com/uc?id=1XFXTVUuw8oCGRtcjvlW3Jnc0OAEEIQXr) |
-|                                                                                  |                                                                                  |
-|                                                                                  |                                                                                  |
-|                                                                                  |                                                                                  |
-|                                                                                  |                                                                                  |
-+----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+
+<table>
+  <tr>
+    <th width="50%">Situation 1</th>
+    <th width="50%">Situation 2</th>
+  </tr>
+  <tr>
+    <td>
+      When the left and right QTI sensors detect a value smaller than 100 and the middle two sensors detect a value larger than 700, the car would move straight on the grid.
+    </td>
+    <td>
+      When all of the four sensors detect a number larger than 700, it indicates the car is at the intersections of the two lines. An instruction can be given to control the car to turn left or turn right.
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://drive.google.com/uc?id=1bK-X87u7bcSnTaC74WTx9nVi6_2OVmq2" width="300" alt="Situation 1">
+    </td>
+    <td align="center">
+      <img src="https://drive.google.com/uc?id=1XFXTVUuw8oCGRtcjvlW3Jnc0OAEEIQXr" width="300" alt="Situation 2">
+    </td>
+  </tr>
+</table>
 
 The general idea of the function is to count the number of intersections
 came across. Theoretically, the value we set is 700. When QTI detects
